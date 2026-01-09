@@ -1,0 +1,7 @@
+export * from './Home/HomePage'
+export * from './Design/DesignPage'
+export * from './OurWork/OurWorkPage'
+export * from './Websites/WebsitesPage'
+export * from './About/AboutPage'
+export * from './Contact/ContactPage'
+export * from './Services/ServicesPage'

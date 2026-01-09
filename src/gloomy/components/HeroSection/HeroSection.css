@@ -1,0 +1,67 @@
+.hero {
+  padding: 10px 100px;
+}
+
+
+.hero-title {
+  font-size: clamp(58px, 7vw, 98px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -2px;
+  margin-bottom: 48px;
+  font-family: "Space Grotesk", sans-serif;
+  width: 70%;
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 4px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.hero-button {
+  background: #c7ccff;
+  border: none;
+  padding: 18px 32px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero-right {
+ display: flex;
+ justify-content: end;
+}
+
+.hero-right p {
+  font-family: "Space Grotesk", sans-serif;
+  max-width: 420px;
+  font-size: 24px;
+  line-height: 1.6;
+  font-weight: 500;
+  margin: 0;
+  text-align: end;
+  width: 100%;
+}
