@@ -1,3 +1,5 @@
 export * from './Navigation/Navigation'
 export * from './MenuModal/MenuModal'
 export * from './HeroSection/HeroSection'
+export * from './Statistic/Statistic'
+export * from './StatisticItem/StatisticItem'

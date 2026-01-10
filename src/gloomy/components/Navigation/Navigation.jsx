@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { logo } from "../../../assets/images";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { MenuModal } from "../";
 
 import "./Navigation.css";
@@ -11,21 +11,28 @@ export const Navigation = () => {
   return (
     <div className="navigation">
       <div className="logo-section">
-        <Link className="logo-btn" to="/home">
+        <NavLink className="logo-btn" to="/home">
           <img className="logo" src={logo} alt="logo" />
-          <p className="logo-text">Gloomy Studio</p>
-        </Link>
+          <p className="logo-text">Gloomy Studios</p>
+        </NavLink>
       </div>
       <nav className="horizotal-menu">
-        <Link className="menu-item" to="/websites">
+        <NavLink
+          className={({ isActive }) => (isActive ? "active" : undefined)}
+          to="/websites"
+        >
           WebSites
-        </Link>
-        <Link className="menu-item" to="/design">
-          Desing
-        </Link>
-        <Link className="menu-item" to="/our-work">
+        </NavLink>
+        <NavLink
+           className={({ isActive }) => (isActive ? "active" : undefined)}
+          to="/design">
+          Design
+        </NavLink>
+        <NavLink 
+           className={({ isActive }) => (isActive ? "active" : undefined)}
+          to="/our-work">
           Our Work
-        </Link>
+        </NavLink>
       </nav>
       <button onClick={() => setIsOpen(true)} className="menu-btn">
         <i className="bx bx-menu"></i>

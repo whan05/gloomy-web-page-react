@@ -31,12 +31,20 @@
 }
 
 
-.horizotal-menu .menu-item {
+.horizotal-menu a {
     text-decoration: none;
     font-family: "Space Grotesk", sans-serif;
     color: #000000;
     font-size: 19px;
     font-weight: 500;
+}
+
+.horizotal-menu a.active {
+    color: #ffb199;
+}
+
+.horizotal-menu a:hover {
+    color: #ffb199;
 }
 
 .menu-btn {

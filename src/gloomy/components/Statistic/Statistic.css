@@ -1,0 +1,44 @@
+.statistic {
+    background-color: #000000;
+    color: #FFFFFF;
+    margin-top: -130px;
+    padding-top: 120px;
+    padding-inline: 120px;
+}
+
+.statistic-title {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 100px;
+}
+
+.statistics-content {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    gap: 48px;
+    width: 80%;
+    justify-content: center;
+}
+
+.top-text {
+    width: 45%;
+    font-family: "Space Grotesk", sans-serif;
+    text-align: end;
+    font-size: 24px;
+}
+
+.statistics-content:last-child {
+    justify-content: center;
+}
+
+.bottom-text {
+    width: 45%;
+    font-family: "Space Grotesk", sans-serif;
+    text-align: end;
+    font-size: 24px;
+}
+
+.statistic-website {
+    display: flex;
+    justify-content: flex-end;
+}

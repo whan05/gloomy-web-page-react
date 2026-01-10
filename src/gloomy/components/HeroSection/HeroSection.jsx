@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./HeroSection.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const TEXT = "We build websites & brands people love";
 
@@ -28,9 +28,9 @@ export const HeroSection = () => {
 
       <div className="hero-container">
         <button className="hero-button">
-          <Link to="our-work">
+          <NavLink to="our-work">
             View Our Work <span>→</span>
-          </Link>
+          </NavLink>
         </button>
 
       <div className="hero-right">
