@@ -1,0 +1,11 @@
+.services {
+  padding: 20px 120px;
+  margin: 0 auto;
+}
+
+.services h2 {
+  font-family: "Space Grotesk", sans-serif;
+  margin-bottom: 48px;
+  line-height: 1.1;
+  font-size: 100px;
+}

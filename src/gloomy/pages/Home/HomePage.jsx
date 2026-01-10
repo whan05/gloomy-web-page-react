@@ -1,5 +1,5 @@
 import React from 'react'
-import { HeroSection, Statistic } from '../../components'
+import { HeroSection, ServicesSection, Statistic } from '../../components'
 import { banner } from '../../../assets/images'
 
 import './HomePage.css'
@@ -13,6 +13,9 @@ export const HomePage = () => {
       </div>
       <div className="statistics-container">
         <Statistic/>
+      </div>
+      <div className="out-services-section">
+        <ServicesSection/>
       </div>
     </div>
   )
