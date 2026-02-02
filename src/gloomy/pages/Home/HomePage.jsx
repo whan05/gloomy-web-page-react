@@ -3,6 +3,7 @@ import { HeroSection, ServicesSection, Statistic } from '../../components'
 import { banner } from '../../../assets/images'
 
 import './HomePage.css'
+import { Mission } from '../../components/Mission/Mission'
 
 export const HomePage = () => {
   return (
@@ -16,6 +17,9 @@ export const HomePage = () => {
       </div>
       <div className="out-services-section">
         <ServicesSection/>
+      </div>
+      <div className="mission-section">
+        <Mission/>
       </div>
     </div>
   )
