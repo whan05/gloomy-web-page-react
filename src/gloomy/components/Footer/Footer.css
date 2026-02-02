@@ -6,8 +6,8 @@
     padding: 80px 60px 30px;
     border-radius: 40px;
     background: #000;
-    max-width: 1200px;
-    margin: auto;
+    max-width: 100%;
+    margin-top: 16px;
 }
 
 .footer-main h2 {
