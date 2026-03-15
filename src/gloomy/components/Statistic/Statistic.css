@@ -16,12 +16,12 @@
     align-items: center;
     padding: 20px 0;
     gap: 48px;
-    width: 80%;
+    width: min(100%, 1100px);
     justify-content: center;
 }
 
 .top-text {
-    width: 45%;
+    width: min(45%, 520px);
     font-family: "Space Grotesk", sans-serif;
     text-align: end;
     font-size: 24px;
@@ -32,7 +32,7 @@
 }
 
 .bottom-text {
-    width: 45%;
+    width: min(45%, 520px);
     font-family: "Space Grotesk", sans-serif;
     text-align: end;
     font-size: 24px;
@@ -41,4 +41,72 @@
 .statistic-website {
     display: flex;
     justify-content: flex-end;
+    width: min(100%, 1100px);
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .statistic {
+        margin-top: -90px;
+        padding-top: 96px;
+        padding-inline: 48px;
+    }
+
+    .statistic-title {
+        font-size: clamp(56px, 9vw, 84px);
+    }
+
+    .statistics-content {
+        gap: 32px;
+    }
+
+    .top-text,
+    .bottom-text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .statistic {
+        margin-top: -40px;
+        padding-top: 64px;
+        padding-inline: 20px;
+    }
+
+    .statistic-title {
+        font-size: clamp(42px, 12vw, 64px);
+    }
+
+    .statistics-content,
+    .statistic-website {
+        width: 100%;
+    }
+
+    .statistics-content {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    .statistics-content:last-child {
+        flex-direction: column-reverse;
+    }
+
+    .top-text,
+    .bottom-text {
+        width: 100%;
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .statistic-website {
+        justify-content: center;
+        padding: 12px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .statistic {
+        padding-inline: 16px;
+    }
 }

@@ -9,3 +9,25 @@
   line-height: 1.1;
   font-size: 100px;
 }
+
+@media (max-width: 1024px) {
+  .services {
+    padding: 20px 48px;
+  }
+
+  .services h2 {
+    font-size: clamp(56px, 9vw, 84px);
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services {
+    padding: 20px;
+  }
+
+  .services h2 {
+    font-size: clamp(40px, 12vw, 60px);
+    margin-bottom: 24px;
+  }
+}

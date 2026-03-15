@@ -33,6 +33,14 @@
 }
 
 @media (max-width: 768px) {
+    .mission {
+        flex-direction: column;
+    }
+
+    .mission-image {
+        min-height: 280px;
+    }
+
     .mission-content h2 {
         position: static;
         padding: 2rem 1rem;

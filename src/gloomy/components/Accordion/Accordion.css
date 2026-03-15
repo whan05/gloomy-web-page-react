@@ -3,3 +3,9 @@
   flex-direction: column;
   padding: 0 40px;
 }
+
+@media (max-width: 768px) {
+  .accordion {
+    padding: 0;
+  }
+}

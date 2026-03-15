@@ -134,3 +134,86 @@
     opacity: 0.6;
     color: #000;
 }
+
+@media (max-width: 1024px) {
+    .footer-content {
+        padding: 56px 32px 24px;
+        border-radius: 32px;
+    }
+
+    .footer-padding {
+        padding: 0;
+    }
+
+    .footer-main h2 {
+        font-size: clamp(40px, 6vw, 48px);
+    }
+
+    .footer-link {
+        font-size: 24px;
+    }
+
+    .footer-links {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        padding: 40px 20px 20px;
+        border-radius: 24px;
+    }
+
+    .footer-main h2 {
+        font-size: 32px;
+    }
+
+    .footer-link {
+        display: inline-block;
+        margin-left: 0;
+        margin-top: 12px;
+        font-size: 20px;
+    }
+
+    .footer-info {
+        margin-top: 32px;
+        gap: 24px;
+    }
+
+    .footer-contact p,
+    .footer-contact a,
+    .phone {
+        font-size: 16px;
+    }
+
+    .footer-links {
+        width: 100%;
+        justify-content: space-between;
+        gap: 24px;
+    }
+
+    .footer-socials {
+        margin-top: 32px;
+        justify-content: flex-start;
+    }
+
+    .social {
+        flex: 1 1 140px;
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    .footer-bottom {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-main h2 {
+        font-size: 28px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+}

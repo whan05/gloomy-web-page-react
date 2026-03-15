@@ -30,6 +30,7 @@
   font-size: 52px;
   font-weight: 500;
   margin: 0;
+  text-align: left;
 }
 
 .accordion-icon {
@@ -77,4 +78,69 @@ font-family: "Space Grotesk", sans-serif;
 .accordion-readmore a {
     text-decoration: none;
     color: #000000;
+}
+
+@media (max-width: 1024px) {
+  .accordion-title h3 {
+    font-size: 40px;
+  }
+
+  .accordion-icon {
+    width: 64px;
+    height: 64px;
+    font-size: 32px;
+  }
+
+  .accordion-toggle {
+    font-size: 36px;
+  }
+
+  .accordion-content {
+    max-width: 100%;
+  }
+
+  .accordion-content p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .accordion-header {
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .accordion-title {
+    gap: 12px;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .accordion-title h3 {
+    font-size: 30px;
+  }
+
+  .accordion-icon {
+    width: 52px;
+    height: 52px;
+    font-size: 26px;
+  }
+
+  .accordion-toggle {
+    font-size: 28px;
+    line-height: 1;
+  }
+
+  .accordion-content {
+    margin-left: 0;
+  }
+
+  .accordion-content p {
+    margin-left: 0;
+    font-size: 18px;
+  }
+
+  .accordion-readmore {
+    width: 100%;
+  }
 }

@@ -35,6 +35,7 @@
     display: flex;
     justify-content: space-between;
     align-items: end;
+    gap: 32px;
 }
 
 .hero-button {
@@ -62,6 +63,7 @@
 .hero-right {
  display: flex;
  justify-content: end;
+ flex: 1;
 }
 
 .hero-right p {
@@ -73,4 +75,72 @@
   margin: 0;
   text-align: end;
   width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    padding: 24px 48px;
+  }
+
+  .hero-title {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .hero-button {
+    padding: 24px 40px;
+    font-size: 18px;
+  }
+
+  .hero-right p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 16px 20px 24px;
+  }
+
+  .hero-title {
+    letter-spacing: -1px;
+    margin-bottom: 24px;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-button {
+    width: 100%;
+    justify-content: center;
+    padding: 20px 28px;
+  }
+
+  .hero-button a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-right {
+    justify-content: flex-start;
+  }
+
+  .hero-right p {
+    max-width: none;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: clamp(42px, 14vw, 58px);
+  }
+
+  .hero-button {
+    font-size: 16px;
+  }
 }

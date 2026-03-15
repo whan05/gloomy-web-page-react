@@ -1,6 +1,6 @@
 .statistic-item {
-    width: 270px;
-    height: 270px;
+    width: min(100%, 270px);
+    min-height: 270px;
     border-radius: 24px;
     padding: 24px;
     display: flex;
@@ -30,4 +30,24 @@
     font-weight: 500;
     opacity: 0.8;
     margin: 0;
+}
+
+@media (max-width: 768px) {
+    .statistic-item {
+        width: 100%;
+        min-height: 220px;
+        padding: 20px;
+    }
+
+    .statistic-item-icon {
+        font-size: 56px;
+    }
+
+    .statistic-item-number {
+        font-size: 46px;
+    }
+
+    .statistic-item-description {
+        font-size: 18px;
+    }
 }

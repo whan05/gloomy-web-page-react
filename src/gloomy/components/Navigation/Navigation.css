@@ -3,13 +3,19 @@
     justify-content: space-between;
     align-items: center;
     padding: 28px 50px;
+    gap: 24px;
 }
 
+.logo-section {
+    min-width: 0;
+}
 
 .logo-btn {
     text-decoration: none;
     display: flex;
     align-items: center;
+    gap: 12px;
+    min-width: 0;
 }
 
 .logo {
@@ -23,11 +29,14 @@
     font-size: 32px;
     font-weight: 500;
     margin: 0;
+    white-space: nowrap;
 }
 
 .horizotal-menu {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 
@@ -54,4 +63,52 @@
 
 .menu-btn i {
     font-size: 40px;
+}
+
+@media (max-width: 1024px) {
+    .navigation {
+        padding: 24px 32px;
+    }
+
+    .logo-text {
+        font-size: 26px;
+    }
+
+    .horizotal-menu a {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        padding: 20px;
+        gap: 16px;
+    }
+
+    .logo {
+        width: 42px;
+        height: 42px;
+    }
+
+    .logo-text {
+        font-size: 22px;
+    }
+
+    .horizotal-menu {
+        display: none;
+    }
+
+    .menu-btn i {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navigation {
+        padding: 16px;
+    }
+
+    .logo-text {
+        font-size: 18px;
+    }
 }
