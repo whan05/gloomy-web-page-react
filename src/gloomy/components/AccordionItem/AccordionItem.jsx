@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { useLanguage } from "../../i18n/LanguageContext";
 import "./AccordionItem.css";
 
 export const AccordionItem = ({
@@ -10,6 +11,8 @@ export const AccordionItem = ({
   onToggle,
   route
 }) => {
+  const { t } = useLanguage();
+
   return (
     <div className="accordion-item">
       <button className="accordion-header" onClick={onToggle}>
@@ -32,7 +35,7 @@ export const AccordionItem = ({
             className="accordion-readmore"
             style={{ backgroundColor: color }}
           >
-            <NavLink to={route}>Read more →</NavLink>
+            <NavLink to={route}>{t("common.readMore")} →</NavLink>
           </button>
         </div>
       )}

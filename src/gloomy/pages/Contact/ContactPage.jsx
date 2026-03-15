@@ -1,7 +1,8 @@
 import React from 'react'
+import { PageIntro } from '../../components'
 
 export const ContactPage = () => {
   return (
-    <div>ContactPage</div>
+    <PageIntro pageKey="contact" />
   )
 }

@@ -1,31 +1,30 @@
 import { StatisticItem } from "../StatisticItem/StatisticItem";
+import { useLanguage } from "../../i18n/LanguageContext";
 import "./Statistic.css";
 
 export const Statistic = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="statistic">
       <h2 className="statistic-title">
-        Where creativity <br /> meets results
+        {t("statistic.title")}
       </h2>
       <div className="statistics-container">
         <div className="statistics-content">
           <StatisticItem
             number="347"
-            description="Complete projects"
+            description={t("statistic.items.completeProjects")}
             bgColor="#CFF5E7"
             className="stat-item item-green"
             icon="#"
           />
-          <p className="statistic-text top-text">
-            We supercharge businesses with stand out branding,
-            conversion-focused websites, and content that truly engages +
-            connects + converts.
-          </p>
+          <p className="statistic-text top-text">{t("statistic.topText")}</p>
         </div>
         <div className="statistic-website">
           <StatisticItem
             number="1720"
-            description="Website pages"
+            description={t("statistic.items.websitePages")}
             bgColor="#FFB7A5"
             className="stat-item item-orange"
             icon="*"
@@ -33,13 +32,10 @@ export const Statistic = () => {
         </div>
 
         <div className="statistics-content">
-          <p className="statistic-text bottom-text">
-            We design exceptional brands, products, web apps, mobile apps,
-            websites for startups and enterprises.
-          </p>
+          <p className="statistic-text bottom-text">{t("statistic.bottomText")}</p>
           <StatisticItem
             number="31568"
-            description="Working hours"
+            description={t("statistic.items.workingHours")}
             bgColor="#BEE7FF"
             className="stat-item item-blue"
             icon="<"

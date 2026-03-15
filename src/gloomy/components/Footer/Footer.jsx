@@ -1,56 +1,57 @@
 import "./Footer.css";
+import { useLanguage } from "../../i18n/LanguageContext";
 
 export const Footer = () => {
+  const { t } = useLanguage();
+  const navLinks = t("footer.navLinks");
+  const serviceLinks = t("footer.serviceLinks");
+  const socials = t("footer.socials");
+
   return (
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-padding">
           <div className="footer-main">
             <h2>
-              Ready to elevate your <br /> brand online?
-              <span className="footer-link"> Let’s talk</span>
+              {t("footer.headline")}
+              <span className="footer-link"> {t("footer.cta")}</span>
             </h2>
           </div>
 
           <div className="footer-info">
             <div className="footer-contact">
-              <p>1940 El Cajon Blvd, San Diego,</p>
-              <p>CA 92104, United States</p>
+              <p>{t("footer.addressLine1")}</p>
+              <p>{t("footer.addressLine2")}</p>
               <a  className="footer-email" href="mailto:info@domain.tld">info@domain.tld</a>
               <p className="phone">+1 215-606-0391</p>
             </div>
 
             <div className="footer-links">
               <div>
-                <a href="#">Home</a>
-                <a href="#">Services</a>
-                <a href="#">Our Work</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
+                {navLinks.map((label) => (
+                  <a href="#" key={label}>{label}</a>
+                ))}
               </div>
 
               <div>
-                <a href="#">Websites</a>
-                <a href="#">Marketing</a>
-                <a href="#">Branding</a>
-                <a href="#">Design</a>
-                <a href="#">Strategy</a>
+                {serviceLinks.map((label) => (
+                  <a href="#" key={label}>{label}</a>
+                ))}
               </div>
             </div>
           </div>
         </div>
 
         <div className="footer-socials">
-          <button className="social facebook">Facebook</button>
-          <button className="social youtube">Youtube</button>
-          <button className="social instagram">Instagram</button>
-          <button className="social telegram">Telegram</button>
-          <button className="social twitter">Twitter</button>
+          <button className="social facebook">{socials[0]}</button>
+          <button className="social youtube">{socials[1]}</button>
+          <button className="social instagram">{socials[2]}</button>
+          <button className="social telegram">{socials[3]}</button>
+          <button className="social twitter">{socials[4]}</button>
         </div>
       </div>
 
-      <div className="footer-bottom">Copyright © Gloomy Studios</div>
+      <div className="footer-bottom">{t("common.copyright")}</div>
     </footer>
   );
 };
-

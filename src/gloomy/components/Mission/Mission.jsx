@@ -1,19 +1,21 @@
 import { mission } from "../../../assets/images";
+import { useLanguage } from "../../i18n/LanguageContext";
 import "./Mission.css";
 
 export const Mission = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="mission" aria-labelledby="mission-title">
       <div
         className="mission-image"
         role="img"
-        aria-label="Creative team workspace representing the agency mission"
+        aria-label={t("mission.imageAlt")}
         style={{ backgroundImage: `url(${mission})` }}
       >
         <div className="mission-content">
           <h2 id="mission-title">
-            Our mission is simple yet profound: to elevate brands, engage
-            audiences, and drive tangible growth.
+            {t("mission.title")}
           </h2>
         </div>
       </div>

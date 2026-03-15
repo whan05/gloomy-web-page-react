@@ -1,16 +1,18 @@
 import "./Portfolio.css";
+import { useLanguage } from "../../i18n/LanguageContext";
 
 export const PortfolioTitle = () => {
+  const { t } = useLanguage();
+
   return (
     <div className="portfolio-title-wrapper">
       <div className="portfolio-title-track">
-        <span>* portfolio *</span>
-        <span>* portfolio *</span>
-        <span>* portfolio *</span>
-        <span>* portfolio *</span>
+        <span>* {t("portfolio.marquee")} *</span>
+        <span>* {t("portfolio.marquee")} *</span>
+        <span>* {t("portfolio.marquee")} *</span>
+        <span>* {t("portfolio.marquee")} *</span>
       </div>
     </div>
   );
 };
-
 

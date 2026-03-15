@@ -1,23 +1,29 @@
 import { useEffect, useState } from "react";
 import "./HeroSection.css";
 import { NavLink } from "react-router-dom";
-
-const TEXT = "We build websites & brands people love";
+import { useLanguage } from "../../i18n/LanguageContext";
 
 export const HeroSection = () => {
+  const { t } = useLanguage();
+  const text = t("hero.title");
   const [displayedText, setDisplayedText] = useState("");
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    if (index < TEXT.length) {
+    if (index < text.length) {
       const timeout = setTimeout(() => {
-        setDisplayedText((prev) => prev + TEXT[index]);
+        setDisplayedText((prev) => prev + text[index]);
         setIndex((prev) => prev + 1);
       }, 60); // velocidad de escritura
 
       return () => clearTimeout(timeout);
     }
-  }, [index]);
+  }, [index, text]);
+
+  useEffect(() => {
+    setDisplayedText("");
+    setIndex(0);
+  }, [text]);
 
   return (
     <section className="hero">
@@ -29,15 +35,13 @@ export const HeroSection = () => {
       <div className="hero-container">
         <button className="hero-button">
           <NavLink to="our-work">
-            View Our Work <span>→</span>
+            {t("hero.cta")} <span>→</span>
           </NavLink>
         </button>
 
       <div className="hero-right">
         <p>
-          We’re a team of creative web designers and skilled developers who
-          relish in creating purposeful digital experiences that people fall in
-          love with.
+          {t("hero.description")}
         </p>
       </div>
       </div>

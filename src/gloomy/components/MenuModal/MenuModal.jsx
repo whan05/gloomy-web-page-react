@@ -1,7 +1,10 @@
 import { NavLink } from "react-router-dom";
+import { useLanguage } from "../../i18n/LanguageContext";
 import "./MenuModal.css";
 
 export const MenuModal = ({ isOpen, onClose }) => {
+  const { t } = useLanguage();
+
   if (!isOpen) return null;
 
   return (
@@ -21,7 +24,7 @@ export const MenuModal = ({ isOpen, onClose }) => {
                 isActive ? "active" : undefined
               }
             >
-              Home
+              {t("nav.items.home")}
             </NavLink>
 
             <NavLink
@@ -31,7 +34,7 @@ export const MenuModal = ({ isOpen, onClose }) => {
                 isActive ? "active" : undefined
               }
             >
-              About
+              {t("nav.items.about")}
             </NavLink>
 
             <NavLink
@@ -41,7 +44,7 @@ export const MenuModal = ({ isOpen, onClose }) => {
                 isActive ? "active" : undefined
               }
             >
-              Services
+              {t("nav.items.services")}
             </NavLink>
 
             <NavLink
@@ -51,13 +54,13 @@ export const MenuModal = ({ isOpen, onClose }) => {
                 isActive ? "active" : undefined
               }
             >
-              Contact
+              {t("nav.items.contact")}
             </NavLink>
           </nav>
 
           <div className="menu-info">
             <p>
-              1940 El Cajon Blvd, San Diego, CA 92104, United States
+              {t("footer.addressLine1")} {t("footer.addressLine2")}
             </p>
 
             <a
