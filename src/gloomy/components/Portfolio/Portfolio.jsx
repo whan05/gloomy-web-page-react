@@ -3,13 +3,16 @@ import "./Portfolio.css";
 import {PortfolioTitle} from "./PortfolioTitle";
 import {PortfolioFilters} from "./PortfolioFilters";
 import {PortfolioCard} from "./PortfolioCard";
-import { portfolioItems, categories } from "../../data/portfolioData";
+import { getPortfolioItems, portfolioCategoryIds } from "../../data/portfolioData";
+import { useLanguage } from "../../i18n/LanguageContext";
 
 export const Portfolio = () => {
-  const [activeCategory, setActiveCategory] = useState("All projects");
+  const { t } = useLanguage();
+  const [activeCategory, setActiveCategory] = useState("all");
+  const portfolioItems = getPortfolioItems(t);
 
   const filteredItems =
-    activeCategory === "All projects"
+    activeCategory === "all"
       ? portfolioItems
       : portfolioItems.filter(
           item => item.category === activeCategory
@@ -20,7 +23,7 @@ export const Portfolio = () => {
       <PortfolioTitle />
 
       <PortfolioFilters
-        categories={categories}
+        categories={portfolioCategoryIds}
         active={activeCategory}
         onChange={setActiveCategory}
       />
@@ -33,5 +36,4 @@ export const Portfolio = () => {
     </section>
   );
 };
-
 

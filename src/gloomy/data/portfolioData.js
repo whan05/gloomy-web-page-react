@@ -1,48 +1,48 @@
 import { projectCover } from "../../assets/images";
 
-export const portfolioItems = [
+export const portfolioCategoryIds = [
+  "all",
+  "branding",
+  "design",
+  "marketing",
+  "strategy",
+  "websites",
+];
+
+export const getPortfolioItems = (t) => [
   {
     id: 1,
-    title: "Digital Marketing",
-    description: "Brand awareness campaign for startups",
-    category: "Marketing",
+    title: t("portfolio.items.digitalMarketing.title"),
+    description: t("portfolio.items.digitalMarketing.description"),
+    category: "marketing",
     image: projectCover,
   },
   {
     id: 2,
-    title: "Book Mockup",
-    description: "Editorial design & layout",
-    category: "Design",
+    title: t("portfolio.items.bookMockup.title"),
+    description: t("portfolio.items.bookMockup.description"),
+    category: "design",
     image: projectCover,
   },
   {
     id: 3,
-    title: "E-commerce Website",
-    description: "Modern shopping experience",
-    category: "Websites",
-image: projectCover,
+    title: t("portfolio.items.ecommerceWebsite.title"),
+    description: t("portfolio.items.ecommerceWebsite.description"),
+    category: "websites",
+    image: projectCover,
   },
   {
     id: 4,
-    title: "Brand Identity",
-    description: "Complete branding system",
-    category: "Branding",
+    title: t("portfolio.items.brandIdentity.title"),
+    description: t("portfolio.items.brandIdentity.description"),
+    category: "branding",
     image: projectCover,
   },
   {
     id: 5,
-    title: "UX Strategy",
-    description: "Product usability improvements",
-    category: "Strategy",
+    title: t("portfolio.items.uxStrategy.title"),
+    description: t("portfolio.items.uxStrategy.description"),
+    category: "strategy",
     image: projectCover,
-  }
-];
-
-export const categories = [
-  "All projects",
-  "Branding",
-  "Design",
-  "Marketing",
-  "Strategy",
-  "Websites",
+  },
 ];

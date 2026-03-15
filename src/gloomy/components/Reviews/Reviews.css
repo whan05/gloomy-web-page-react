@@ -1,0 +1,239 @@
+.reviews {
+  background: #b8baf8;
+  border-radius: 56px;
+  margin: -72px 0 0;
+  overflow: hidden;
+  padding: 72px 24px 64px;
+  position: relative;
+  z-index: 2;
+}
+
+.reviews__intro {
+  align-items: center;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  margin: 0 auto 56px;
+  max-width: 1520px;
+  padding: 0 28px;
+}
+
+.reviews__intro h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(56px, 9vw, 116px);
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  line-height: 0.96;
+  margin: 0;
+  max-width: 6ch;
+}
+
+.reviews__intro p {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(24px, 2.4vw, 42px);
+  font-weight: 600;
+  justify-self: end;
+  line-height: 1.12;
+  margin: 0;
+  max-width: 15ch;
+  text-align: center;
+}
+
+.reviews__grid {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0 auto;
+  max-width: 1520px;
+  padding: 0 24px;
+}
+
+.review-card {
+  background: #ffffff;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  min-height: 420px;
+  padding: 40px;
+}
+
+.review-card__header h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.review-card__header p {
+  color: #97a7b9;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.review-card__content {
+  color: #1d1d1d;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 20px;
+  line-height: 1.45;
+  margin: 24px 0 32px;
+}
+
+.review-card__quote {
+  color: #b8baf8;
+  font-size: 96px;
+  line-height: 0.8;
+  margin-top: auto;
+}
+
+.review-card__quote i {
+  display: inline-block;
+}
+
+.review-brands {
+  align-items: end;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  margin: 72px auto 0;
+  max-width: 1520px;
+  padding: 0 24px;
+}
+
+.review-brand {
+  color: #0c0c0c;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-self: center;
+  text-align: center;
+}
+
+.review-brand h3,
+.review-brand p {
+  margin: 0;
+}
+
+.review-brand h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.review-brand p {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.review-brand--iconic h3 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.review-brand--findr h3 {
+  font-size: 42px;
+  font-style: italic;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+}
+
+.review-brand--art-academy h3 {
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 0.88;
+}
+
+.review-brand--cosmic-sports h3,
+.review-brand--intdeco h3,
+.review-brand--designocracy h3 {
+  font-size: 20px;
+  letter-spacing: 0.06em;
+}
+
+@media (max-width: 1200px) {
+  .reviews {
+    border-radius: 40px;
+    margin-top: -48px;
+    padding: 56px 20px;
+  }
+
+  .reviews__intro {
+    gap: 24px;
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
+  }
+
+  .reviews__intro p {
+    justify-self: start;
+    max-width: 22ch;
+    text-align: left;
+  }
+
+  .reviews__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .review-brands {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 56px;
+    row-gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .reviews {
+    border-radius: 28px;
+    margin-top: -24px;
+    padding: 40px 16px;
+  }
+
+  .reviews__intro,
+  .reviews__grid,
+  .review-brands {
+    padding: 0 8px;
+  }
+
+  .reviews__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .review-card {
+    border-radius: 28px;
+    min-height: auto;
+    padding: 28px 24px;
+  }
+
+  .review-card__content {
+    font-size: 18px;
+  }
+
+  .review-card__quote {
+    font-size: 96px;
+  }
+
+  .review-brands {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .reviews__intro h2 {
+    max-width: 100%;
+  }
+
+  .reviews__intro p {
+    font-size: 18px;
+    max-width: 100%;
+  }
+
+  .review-brands {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,7 +1,8 @@
 import React from 'react'
+import { PageIntro } from '../../components'
 
 export const ServicesPage = () => {
   return (
-    <div>ServicesPage</div>
+    <PageIntro pageKey="services" />
   )
 }
