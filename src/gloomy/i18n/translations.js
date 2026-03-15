@@ -71,6 +71,41 @@ export const translations = {
         ui: "Logo Development",
       },
     },
+    contactLanding: {
+      title: "Contact us",
+      cta: "Book a Meeting",
+      intro: "If you call us, you will speak with a friendly, caring and understanding human.",
+      form: {
+        title: "Write us a message:",
+        description: "For short and sweet brand and website questions...",
+        submit: "Send Message",
+        fields: {
+          name: "Name*",
+          email: "Email Address*",
+          phone: "Phone Number*",
+          website: "Website*",
+          message: "Message",
+        },
+      },
+      visit: {
+        title: "Visit our office:",
+        phone: "+1 215-606-0391",
+        officeTitle: "Office:",
+        addressLine1: "1940 El Cajon Blvd, San Diego,",
+        addressLine2: "CA 92104, United States",
+        hoursTitle: "We’re open:",
+        hoursDays: "Monday - Friday",
+        hoursTime: "8:00am - 4:00pm (AEST)",
+      },
+    },
+    ourWorkLanding: {
+      title: "Our work",
+      cta: "Book a Meeting",
+      intro: "If you call us, you will speak with a friendly, caring and understanding human.",
+      reviewsTitle: "What our clients say about us...",
+      previousReview: "Previous review",
+      nextReview: "Next review",
+    },
     statistic: {
       title: "Where creativity meets results",
       topText:
@@ -284,7 +319,7 @@ export const translations = {
       addressLine1: "1940 El Cajon Blvd, San Diego,",
       addressLine2: "CA 92104, United States",
       navLinks: ["Home", "Services", "Our Work", "About", "Contact"],
-      serviceLinks: ["Websites", "Marketing", "Branding", "Design", "Strategy"],
+      serviceLinks: ["Websites", "Design"],
       socials: ["Facebook", "Youtube", "Instagram", "Telegram", "Twitter"],
     },
     pages: {
@@ -311,7 +346,7 @@ export const translations = {
       services: {
         title: "Services",
         description:
-          "We combine strategy, branding, design, marketing, and development into focused digital execution.",
+          "We focus our service offer on websites and design, combining strategy, visual systems, and development into clear digital execution.",
       },
       websites: {
         title: "Websites",
@@ -391,6 +426,41 @@ export const translations = {
         systems: "Fundamentos de Marca",
         ui: "Desarrollo de Logotipo",
       },
+    },
+    contactLanding: {
+      title: "Contacto",
+      cta: "Agenda una reunión",
+      intro: "Si nos llamas, hablarás con una persona amable, atenta y dispuesta a entender lo que necesitas.",
+      form: {
+        title: "Escríbenos un mensaje:",
+        description: "Para dudas breves y claras sobre marca y sitios web...",
+        submit: "Enviar mensaje",
+        fields: {
+          name: "Nombre*",
+          email: "Correo electrónico*",
+          phone: "Número de teléfono*",
+          website: "Sitio web*",
+          message: "Mensaje",
+        },
+      },
+      visit: {
+        title: "Visita nuestra oficina:",
+        phone: "+1 215-606-0391",
+        officeTitle: "Oficina:",
+        addressLine1: "1940 El Cajon Blvd, San Diego,",
+        addressLine2: "CA 92104, Estados Unidos",
+        hoursTitle: "Estamos abiertos:",
+        hoursDays: "Lunes - Viernes",
+        hoursTime: "8:00am - 4:00pm (AEST)",
+      },
+    },
+    ourWorkLanding: {
+      title: "Nuestro trabajo",
+      cta: "Agenda una reunión",
+      intro: "Si nos llamas, hablarás con una persona amable, atenta y dispuesta a entender lo que necesitas.",
+      reviewsTitle: "Lo que nuestros clientes dicen de nosotros...",
+      previousReview: "Reseña anterior",
+      nextReview: "Siguiente reseña",
     },
     statistic: {
       title: "Donde la creatividad genera resultados",
@@ -605,7 +675,7 @@ export const translations = {
       addressLine1: "1940 El Cajon Blvd, San Diego,",
       addressLine2: "CA 92104, Estados Unidos",
       navLinks: ["Inicio", "Servicios", "Nuestro trabajo", "Nosotros", "Contacto"],
-      serviceLinks: ["Sitios web", "Marketing", "Branding", "Diseño", "Estrategia"],
+      serviceLinks: ["Sitios web", "Diseño"],
       socials: ["Facebook", "Youtube", "Instagram", "Telegram", "Twitter"],
     },
     pages: {
@@ -632,7 +702,7 @@ export const translations = {
       services: {
         title: "Servicios",
         description:
-          "Combinamos estrategia, branding, diseño, marketing y desarrollo en una ejecución digital enfocada.",
+          "Nuestra oferta de servicios se centra en sitios web y diseño, combinando estrategia, sistemas visuales y desarrollo en una ejecución digital clara.",
       },
       websites: {
         title: "Sitios web",

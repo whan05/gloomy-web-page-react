@@ -1,0 +1,239 @@
+@use "tokens" as *;
+@use "mixins" as *;
+
+.our-work-page {
+  padding-bottom: $space-5xl;
+}
+
+.our-work-page__top {
+  @include section-shell();
+  align-items: end;
+  display: grid;
+  gap: $space-3xl;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 540px);
+  padding-top: $space-4xl;
+}
+
+.our-work-page__headline {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: $space-xl;
+}
+
+.our-work-page__headline h1 {
+  font-size: clamp(58px, 8vw, 110px);
+  font-weight: 600;
+  line-height: 0.96;
+  margin: 0;
+}
+
+.our-work-page__cta {
+  @include pill-button($color-accent-mint);
+  font-size: 18px;
+  gap: $space-xs;
+  padding: 18px 32px;
+  text-decoration: none;
+}
+
+.our-work-page__cta:hover {
+  background: $color-accent-peach;
+}
+
+.our-work-page__intro-copy {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0 0 4px;
+  max-width: 18ch;
+  text-align: right;
+}
+
+.our-work-page__portfolio-shell {
+  background: $color-black;
+  border-radius: $radius-2xl;
+  margin-top: $space-4xl;
+  padding: $space-4xl 0;
+}
+
+.our-work-page__portfolio-shell .portfolio-filters {
+  margin-top: 0;
+}
+
+.our-work-page__portfolio-shell .portfolio-filters button {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.our-work-page__portfolio-shell .portfolio-filters button.active {
+  color: $color-white;
+}
+
+.our-work-page__grid {
+  @include section-shell();
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.our-work-page__grid .portfolio-card {
+  border-radius: $radius-lg;
+}
+
+.our-work-page__load-more {
+  @include section-shell();
+  display: flex;
+  justify-content: center;
+  padding-top: $space-4xl;
+}
+
+.our-work-page__load-more-button {
+  @include pill-button(transparent, $color-white, $color-white);
+  cursor: pointer;
+  font-size: 20px;
+  min-width: 220px;
+  padding: 18px 40px;
+}
+
+.our-work-page__load-more-button:hover {
+  background: $color-white;
+  color: $color-black;
+}
+
+.our-work-page__reviews {
+  @include section-shell();
+  padding-top: $space-5xl;
+}
+
+.our-work-page__reviews-intro {
+  margin-bottom: $space-3xl;
+}
+
+.our-work-page__reviews-intro h2 {
+  font-size: clamp(42px, 6vw, 72px);
+  line-height: 1.05;
+  margin: 0;
+  max-width: 7ch;
+}
+
+.our-work-page__review-stage {
+  align-items: center;
+  display: grid;
+  gap: $space-lg;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+}
+
+.our-work-page__review-nav {
+  align-items: center;
+  background: $color-black;
+  border: 0;
+  color: $color-white;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: $font-primary;
+  font-size: 34px;
+  height: 42px;
+  justify-content: center;
+  line-height: 1;
+  width: 42px;
+}
+
+.our-work-page__review-card {
+  min-height: 260px;
+}
+
+.our-work-page__review-header h3 {
+  font-size: 28px;
+  margin: 0 0 $space-xxs;
+}
+
+.our-work-page__review-header p {
+  color: $color-muted;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.our-work-page__review-content {
+  color: $color-text-soft;
+  font-size: 22px;
+  line-height: 1.55;
+  margin: $space-md 0 $space-lg;
+  max-width: 42ch;
+}
+
+.our-work-page__review-quote {
+  color: $color-accent-lavender;
+  font-size: 92px;
+  line-height: 0.8;
+}
+
+.our-work-page__reviews .review-brands {
+  margin-top: $space-4xl;
+}
+
+@include tablet {
+  .our-work-page__top {
+    grid-template-columns: 1fr;
+  }
+
+  .our-work-page__intro-copy {
+    max-width: 28ch;
+    text-align: left;
+  }
+
+  .our-work-page__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .our-work-page__review-stage {
+    grid-template-columns: 1fr;
+  }
+
+  .our-work-page__review-nav {
+    display: none;
+  }
+}
+
+@include mobile {
+  .our-work-page__top {
+    gap: $space-2xl;
+    padding-top: $space-3xl;
+  }
+
+  .our-work-page__portfolio-shell {
+    border-radius: $radius-xl;
+    padding: $space-3xl 0;
+  }
+
+  .our-work-page__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .our-work-page__portfolio-shell .portfolio-filters {
+    justify-content: flex-start;
+  }
+
+  .our-work-page__portfolio-shell .portfolio-filters button {
+    font-size: 16px;
+  }
+
+  .our-work-page__intro-copy {
+    font-size: 22px;
+  }
+
+  .our-work-page__reviews-intro h2 {
+    max-width: 100%;
+  }
+
+  .our-work-page__review-content {
+    font-size: 18px;
+  }
+
+  .our-work-page__load-more-button {
+    min-width: 100%;
+  }
+}

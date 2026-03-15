@@ -37,14 +37,48 @@ export const MenuModal = ({ isOpen, onClose }) => {
               {t("nav.items.about")}
             </NavLink>
 
+            <div className="menu-mobile-group">
+              <NavLink
+                to="/services"
+                onClick={onClose}
+                className={({ isActive }) =>
+                  isActive ? "active" : undefined
+                }
+              >
+                {t("nav.items.services")}
+              </NavLink>
+
+              <div className="menu-mobile-submenu">
+                <NavLink
+                  to="/websites"
+                  onClick={onClose}
+                  className={({ isActive }) =>
+                    isActive ? "active" : undefined
+                  }
+                >
+                  {t("nav.items.websites")}
+                </NavLink>
+
+                <NavLink
+                  to="/design"
+                  onClick={onClose}
+                  className={({ isActive }) =>
+                    isActive ? "active" : undefined
+                  }
+                >
+                  {t("nav.items.design")}
+                </NavLink>
+              </div>
+            </div>
+
             <NavLink
-              to="/services"
+              to="/our-work"
               onClick={onClose}
               className={({ isActive }) =>
                 isActive ? "active" : undefined
               }
             >
-              {t("nav.items.services")}
+              {t("nav.items.ourWork")}
             </NavLink>
 
             <NavLink
