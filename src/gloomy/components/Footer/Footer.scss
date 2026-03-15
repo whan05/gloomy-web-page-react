@@ -1,33 +1,35 @@
+@use "tokens" as *;
+@use "mixins" as *;
+
 .footer {
-    color: #fff;
+  @include full-shell();
+  color: $color-white;
 }
 
 .footer-content {
-    padding: 80px 60px 30px;
-    border-radius: 40px;
-    background: #000;
-    max-width: 100%;
-    margin-top: 16px;
+  padding: 80px 60px 30px;
+  border-radius: $radius-xl;
+  background: $color-black;
+  max-width: 100%;
+  margin-top: 16px;
 }
 
 .footer-main h2 {
     font-size: 52px;
     font-weight: 500;
     line-height: 1.2;
-    font-family: "Space Grotesk", sans-serif;
 }
 
 .footer-padding {
-    padding: 0 170px;
+  @include narrow-shell($content-max-width-wide);
 }
 
 .footer-link {
-    color: #f2a38b;
-    margin-left: 10px;
-    cursor: pointer;
-    border-bottom: 2px solid #f2a38b;
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 28px;
+  color: $color-accent-peach-strong;
+  margin-left: 10px;
+  cursor: pointer;
+  border-bottom: 2px solid $color-accent-peach-strong;
+  font-size: 28px;
 }
 
 .footer-info {
@@ -36,7 +38,6 @@
     gap: 40px;
     margin-top: 60px;
     flex-wrap: wrap;
-    font-family: "Space Grotesk", sans-serif;
     font-size: 16px;
     font-weight: 500;
 }
@@ -46,16 +47,14 @@
     opacity: 0.85;
     margin-top: 0;
     margin-bottom: 8px;
-    font-family: "Space Grotesk", sans-serif;
     font-size: 20px;
     font-weight: 500;
 }
 
 .footer-contact a {
-    color: #f6f29c;
+    color: $color-accent-email;
     text-decoration: none;
     margin: 8px 0 !important;
-    font-family: "Space Grotesk", sans-serif;
     font-size: 14px;
     font-weight: 500;
     text-decoration: underline;
@@ -67,7 +66,6 @@
     font-size: 20px;
     font-weight: 600;
     margin-top: 8px !important;
-    font-family: "Space Grotesk", sans-serif;
     font-size: 16px;
     font-weight: 500;
 }
@@ -79,7 +77,7 @@
 
 .footer-links a {
     display: block;
-    color: #fff;
+    color: $color-white;
     text-decoration: none;
     margin-bottom: 10px;
     opacity: 0.85;
@@ -90,41 +88,41 @@
 }
 
 .footer-socials {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 60px;
-    gap: 16px;
-    flex-wrap: wrap;
+  @include narrow-shell($content-max-width-wide);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 .social {
-    border: none;
-    padding: 14px 30px;
-    border-radius: 999px;
-    font-weight: 500;
-    cursor: pointer;
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 18px;
+  border: none;
+  padding: 14px 30px;
+  border-radius: $radius-pill;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 18px;
 }
 
 .facebook {
-    background: #cfd3ff;
+    background: $color-social-facebook;
 }
 
 .youtube {
-    background: #ffb3a1;
+    background: $color-social-youtube;
 }
 
 .instagram {
-    background: #fbf6a3;
+    background: $color-social-instagram;
 }
 
 .telegram {
-    background: #bfe7ff;
+    background: $color-social-telegram;
 }
 
 .twitter {
-    background: #c9f0d9;
+    background: $color-social-twitter;
 }
 
 .footer-bottom {
@@ -132,17 +130,17 @@
     padding: 16px 0;
     font-size: 20px;
     opacity: 0.6;
-    color: #000;
+    color: $color-black;
 }
 
-@media (max-width: 1024px) {
+@include tablet {
     .footer-content {
         padding: 56px 32px 24px;
-        border-radius: 32px;
+        border-radius: $radius-lg;
     }
 
     .footer-padding {
-        padding: 0;
+        width: 100%;
     }
 
     .footer-main h2 {
@@ -158,10 +156,10 @@
     }
 }
 
-@media (max-width: 768px) {
+@include mobile {
     .footer-content {
         padding: 40px 20px 20px;
-        border-radius: 24px;
+        border-radius: $radius-md;
     }
 
     .footer-main h2 {
@@ -208,7 +206,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@include mobile-small {
     .footer-main h2 {
         font-size: 28px;
     }

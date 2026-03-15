@@ -3,7 +3,7 @@ import { Accordion } from "../Accordion/Accordion";
 import { useLanguage } from "../../i18n/LanguageContext";
 import { getFaqItems } from "../../data/faqData";
 import { FaqItem } from "./FaqItem";
-import "./Faq.css";
+import "./Faq.scss";
 
 export const FaqSection = () => {
   const { t } = useLanguage();

@@ -1,18 +1,21 @@
+@use "tokens" as *;
+@use "mixins" as *;
+
 .services {
-  padding: 20px 120px;
+  @include section-shell();
+  padding-block: 20px;
   margin: 0 auto;
 }
 
 .services h2 {
-  font-family: "Space Grotesk", sans-serif;
   margin-bottom: 48px;
   line-height: 1.1;
   font-size: 100px;
 }
 
-@media (max-width: 1024px) {
+@include tablet {
   .services {
-    padding: 20px 48px;
+    padding-block: 20px;
   }
 
   .services h2 {
@@ -21,9 +24,9 @@
   }
 }
 
-@media (max-width: 768px) {
+@include mobile {
   .services {
-    padding: 20px;
+    padding-block: 20px;
   }
 
   .services h2 {

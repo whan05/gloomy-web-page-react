@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./Portfolio.css";
+import "./Portfolio.scss";
 import {PortfolioTitle} from "./PortfolioTitle";
 import {PortfolioFilters} from "./PortfolioFilters";
 import {PortfolioCard} from "./PortfolioCard";

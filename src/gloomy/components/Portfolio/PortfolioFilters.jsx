@@ -1,4 +1,4 @@
-import './Portfolio.css'
+import './Portfolio.scss'
 import { useLanguage } from "../../i18n/LanguageContext";
 
 export const PortfolioFilters = ({ categories, active, onChange }) => {

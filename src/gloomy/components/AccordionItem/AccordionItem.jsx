@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useLanguage } from "../../i18n/LanguageContext";
-import "./AccordionItem.css";
+import "./AccordionItem.scss";
 
 export const AccordionItem = ({
   title,

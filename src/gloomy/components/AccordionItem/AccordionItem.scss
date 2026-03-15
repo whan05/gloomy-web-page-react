@@ -1,5 +1,8 @@
+@use "tokens" as *;
+@use "mixins" as *;
+
 .accordion-item {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid $color-black;
   padding: 24px 0;
 }
 
@@ -26,7 +29,7 @@
 }
 
 .accordion-title h3 {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: $font-primary;
   font-size: 52px;
   font-weight: 500;
   margin: 0;
@@ -55,7 +58,7 @@
 }
 
 .accordion-content p {
-font-family: "Space Grotesk", sans-serif;
+font-family: $font-primary;
   font-size: 24px;
   line-height: 1.5;
   margin-left: 16px;
@@ -64,7 +67,7 @@ font-family: "Space Grotesk", sans-serif;
 .accordion-readmore {
   margin-top: 16px;
   padding: 16px 24px;
-  border-radius: 999px;
+  border-radius: $radius-pill;
   border: none;
   font-weight: 600;
   font-size: 14px;
@@ -72,12 +75,12 @@ font-family: "Space Grotesk", sans-serif;
 }
 
 .accordion-readmore:hover {
-    background-color: #ffb199 !important;
+    background-color: $color-accent-peach !important;
 }
 
 .accordion-readmore a {
     text-decoration: none;
-    color: #000000;
+    color: $color-black;
 }
 
 @media (max-width: 1024px) {

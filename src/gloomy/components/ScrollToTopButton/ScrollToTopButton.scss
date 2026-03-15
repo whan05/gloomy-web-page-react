@@ -1,10 +1,13 @@
+@use "tokens" as *;
+@use "mixins" as *;
+
 .scroll-top-button {
   align-items: center;
   background: #6f7195;
   border: none;
   border-radius: 0;
   bottom: 24px;
-  color: #ffffff;
+  color: $color-white;
   cursor: pointer;
   display: inline-flex;
   height: 58px;

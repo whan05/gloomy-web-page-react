@@ -1,5 +1,9 @@
+@use "tokens" as *;
+@use "mixins" as *;
+
 .page-intro {
-  padding: 48px 120px 96px;
+  @include section-shell();
+  padding-block: $space-2xl $space-5xl;
 }
 
 .page-intro__content {
@@ -7,7 +11,6 @@
 }
 
 .page-intro__eyebrow {
-  font-family: "Space Grotesk", sans-serif;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -16,23 +19,21 @@
 }
 
 .page-intro h1 {
-  font-family: "Space Grotesk", sans-serif;
   font-size: clamp(48px, 8vw, 92px);
   line-height: 0.98;
   margin: 0 0 20px;
 }
 
 .page-intro__content > p:last-child {
-  font-family: "Space Grotesk", sans-serif;
   font-size: 22px;
   line-height: 1.5;
   margin: 0;
   max-width: 640px;
 }
 
-@media (max-width: 1024px) {
+@include tablet {
   .page-intro {
-    padding: 32px 48px 72px;
+    padding-block: 32px 72px;
   }
 
   .page-intro__content > p:last-child {
@@ -40,9 +41,9 @@
   }
 }
 
-@media (max-width: 768px) {
+@include mobile {
   .page-intro {
-    padding: 24px 20px 56px;
+    padding-block: 24px 56px;
   }
 
   .page-intro__eyebrow {

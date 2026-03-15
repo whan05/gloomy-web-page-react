@@ -1,5 +1,9 @@
+@use "tokens" as *;
+@use "mixins" as *;
+
 .hero {
-  padding: 24px 120px;
+  @include section-shell();
+  padding-block: 24px;
 }
 
 
@@ -9,7 +13,6 @@
   line-height: 1.05;
   letter-spacing: -2px;
   margin-bottom: 48px;
-  font-family: "Space Grotesk", sans-serif;
   width: 70%;
 }
 
@@ -39,7 +42,7 @@
 }
 
 .hero-button {
-  background: #c7ccff;
+  background: $color-accent-blue;
   border: none;
   padding: 32px 56px;
   border-radius: 999px;
@@ -49,16 +52,16 @@
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  font-family: "Space Grotesk", sans-serif;
+  transition: background-color $transition-fast;
 }
 
 .hero-button:hover {
-  background-color: #ffb199;
+  background-color: $color-accent-peach;
 }
 
 .hero-button a {
   text-decoration: none;
-  color: #000000;
+  color: $color-black;
 }
 .hero-right {
  display: flex;
@@ -67,7 +70,6 @@
 }
 
 .hero-right p {
-  font-family: "Space Grotesk", sans-serif;
   max-width: 420px;
   font-size: 24px;
   line-height: 1.6;
@@ -77,9 +79,9 @@
   width: 100%;
 }
 
-@media (max-width: 1024px) {
+@include tablet {
   .hero {
-    padding: 24px 48px;
+    padding-block: 24px;
   }
 
   .hero-title {
@@ -97,9 +99,9 @@
   }
 }
 
-@media (max-width: 768px) {
+@include mobile {
   .hero {
-    padding: 16px 20px 24px;
+    padding-block: 16px 24px;
   }
 
   .hero-title {
@@ -135,7 +137,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@include mobile-small {
   .hero-title {
     font-size: clamp(42px, 14vw, 58px);
   }

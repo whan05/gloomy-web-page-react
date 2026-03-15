@@ -1,6 +1,6 @@
 
 import { useState, Children, cloneElement } from "react";
-import './Accordion.css'
+import './Accordion.scss'
 
 export const Accordion = ({ children }) => {
   const [activeIndex, setActiveIndex] = useState(null);

@@ -1,6 +1,6 @@
 import { Accordion, AccordionItem } from '../';
 import { useLanguage } from '../../i18n/LanguageContext';
-import './ServicesSection.css'
+import './ServicesSection.scss'
 
 export const ServicesSection = () => {
   const { t } = useLanguage();
