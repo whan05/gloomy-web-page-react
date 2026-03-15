@@ -35,6 +35,42 @@ export const translations = {
     home: {
       bannerAlt: "Agency banner image",
     },
+    websitesLanding: {
+      heroTitle: "Websites",
+      title: "Create a Website Your Customers Love",
+      cta: "Book a Discovery Call",
+      lead: "Your website isn’t just a brochure. It should guide attention, communicate value, and make taking action feel obvious.",
+      body:
+        "We design and build websites that align brand positioning, content hierarchy, and conversion goals into one coherent experience. The result is a sharper digital presence that feels considered from the first scroll to the final click.",
+      servicesTitle: "Our Website Services:",
+      servicesBody:
+        "From structure and messaging to interface and implementation, we shape website systems that are flexible enough for growth and clear enough for your audience to act with confidence.",
+      projectsTitle: "Our Website Projects:",
+      services: {
+        strategy: "Website Strategy & Structure",
+        ux: "UX Systems & Content Flow",
+        conversion: "Conversion Page Design",
+        development: "Responsive Development",
+      },
+    },
+    designLanding: {
+      heroTitle: "Design",
+      title: "Create a Brand Your Customers Love",
+      cta: "Book a Discovery Call",
+      lead: "Your brand should feel alive, intentional, and memorable across every touchpoint your audience experiences.",
+      body:
+        "We shape visual systems that bring clarity to positioning, strengthen perception, and give your business a distinct identity that feels consistent in print, digital products, campaigns, and content.",
+      servicesTitle: "Our Design Services:",
+      servicesBody:
+        "From brand identity and guidelines to product visuals and interface systems, we design assets that are expressive enough to stand out and structured enough to scale.",
+      projectsTitle: "Our Design Projects:",
+      services: {
+        identity: "Branding Strategy & Identity",
+        guidelines: "Branding Guidelines",
+        systems: "Brand Foundations",
+        ui: "Logo Development",
+      },
+    },
     statistic: {
       title: "Where creativity meets results",
       topText:
@@ -148,6 +184,19 @@ export const translations = {
     portfolio: {
       marquee: "portfolio",
       loadMore: "Load more...",
+      detail: {
+        visitWebsite: "Visit Website",
+        projectBrief: "Project Brief",
+        relatedProjects: "Related Projects",
+        previousProject: "Previous Portfolio",
+        nextProject: "Next Project",
+        labels: {
+          date: "Date",
+          client: "Client",
+          services: "Services",
+          artDirector: "Art Director",
+        },
+      },
       categories: {
         all: "All projects",
         branding: "Branding",
@@ -160,22 +209,72 @@ export const translations = {
         digitalMarketing: {
           title: "Digital Marketing",
           description: "Brand awareness campaign for startups",
+          summary:
+            "A conversion-focused campaign site designed to position the brand clearly, support acquisition goals, and give the marketing team a sharper digital presence.",
+          briefLead:
+            "We created a bold campaign experience that combines messaging clarity, modern editorial layout, and a flexible structure for future launches.",
+          briefBody:
+            "The final direction balances strong typography, layered product storytelling, and clear calls to action so the client can present offers, services, and campaign content in a way that feels premium and easy to navigate.",
+          date: "September 14, 2024",
+          client: "North Peak Marketing",
+          servicesLabel: "Branding, Websites",
+          artDirector: "Jackson Smith",
         },
         bookMockup: {
           title: "Book Mockup",
           description: "Editorial design & layout",
+          summary:
+            "An editorial presentation template built to showcase product stories with stronger hierarchy, cleaner spacing, and a more tactile visual language.",
+          briefLead:
+            "This project focused on giving the client a launch-ready visual system for print-inspired promotion and digital presentation.",
+          briefBody:
+            "We refined composition, art direction, and image framing so every page feels cohesive and easy to reuse across campaign assets, social pieces, and product showcases.",
+          date: "July 3, 2024",
+          client: "Oakline Publishing",
+          servicesLabel: "Design, Branding",
+          artDirector: "Melissa Grant",
         },
         ecommerceWebsite: {
           title: "E-commerce Website",
           description: "Modern shopping experience",
+          summary:
+            "A modern storefront concept focused on smoother browsing, higher trust, and clearer product presentation across desktop and mobile.",
+          briefLead:
+            "The redesign modernized the shopping journey and reduced friction between discovery, product review, and checkout intent.",
+          briefBody:
+            "We emphasized product imagery, hierarchy, and interaction cues to support conversion and make the browsing experience feel premium without becoming visually noisy.",
+          date: "November 8, 2024",
+          client: "Sienna Commerce",
+          servicesLabel: "Websites, Strategy",
+          artDirector: "Noah Carter",
         },
         brandIdentity: {
           title: "Brand Identity",
           description: "Complete branding system",
+          summary:
+            "A full identity system that gives the business a clearer voice, a more distinctive look, and a stronger base for digital rollout.",
+          briefLead:
+            "We built a brand toolkit designed to stay consistent across web, campaign visuals, and social content without losing character.",
+          briefBody:
+            "The system includes typography direction, color decisions, layout principles, and flexible visual assets that can scale as the business grows into new channels.",
+          date: "May 22, 2024",
+          client: "Verve Studio",
+          servicesLabel: "Branding, Strategy",
+          artDirector: "Sophia Turner",
         },
         uxStrategy: {
           title: "UX Strategy",
           description: "Product usability improvements",
+          summary:
+            "A product usability initiative that clarified user flows, reduced interface friction, and improved decision-making across the core experience.",
+          briefLead:
+            "The work aligned business goals with practical interface changes so the product feels easier to understand and faster to act on.",
+          briefBody:
+            "We mapped key journeys, prioritized bottlenecks, and translated those findings into interface recommendations that can be implemented incrementally with measurable impact.",
+          date: "January 17, 2025",
+          client: "Atlas Product Lab",
+          servicesLabel: "Strategy, Design",
+          artDirector: "Ethan Brooks",
         },
       },
     },
@@ -256,6 +355,42 @@ export const translations = {
     },
     home: {
       bannerAlt: "Imagen principal de la agencia",
+    },
+    websitesLanding: {
+      heroTitle: "Sitios web",
+      title: "Crea un Sitio Web que Tus Clientes Amen",
+      cta: "Agenda una llamada",
+      lead: "Tu sitio web no debería ser solo un brochure. Debe guiar la atención, comunicar valor y hacer que actuar se sienta natural.",
+      body:
+        "Diseñamos y desarrollamos sitios web que alinean posicionamiento de marca, jerarquía de contenido y objetivos de conversión en una sola experiencia coherente. El resultado es una presencia digital más clara, pensada desde el primer scroll hasta el clic final.",
+      servicesTitle: "Nuestros Servicios Web:",
+      servicesBody:
+        "Desde estructura y mensajes hasta interfaz e implementación, construimos sistemas web lo bastante flexibles para crecer y lo bastante claros para que tu audiencia actúe con confianza.",
+      projectsTitle: "Nuestros Proyectos Web:",
+      services: {
+        strategy: "Estrategia y Estructura Web",
+        ux: "Sistemas UX y Flujo de Contenido",
+        conversion: "Diseño de Páginas de Conversión",
+        development: "Desarrollo Responsive",
+      },
+    },
+    designLanding: {
+      heroTitle: "Diseño",
+      title: "Crea una Marca que Tus Clientes Amen",
+      cta: "Agenda una llamada",
+      lead: "Tu marca debe sentirse viva, intencional y memorable en cada punto de contacto con tu audiencia.",
+      body:
+        "Diseñamos sistemas visuales que dan claridad al posicionamiento, fortalecen la percepción y le dan a tu negocio una identidad distintiva y coherente en piezas impresas, productos digitales, campañas y contenido.",
+      servicesTitle: "Nuestros Servicios de Diseño:",
+      servicesBody:
+        "Desde identidad de marca y lineamientos visuales hasta recursos de interfaz y sistemas gráficos, diseñamos activos que destacan con personalidad y al mismo tiempo son lo bastante sólidos para escalar.",
+      projectsTitle: "Nuestros Proyectos de Diseño:",
+      services: {
+        identity: "Estrategia e Identidad de Marca",
+        guidelines: "Guías de Branding",
+        systems: "Fundamentos de Marca",
+        ui: "Desarrollo de Logotipo",
+      },
     },
     statistic: {
       title: "Donde la creatividad genera resultados",
@@ -370,6 +505,19 @@ export const translations = {
     portfolio: {
       marquee: "portafolio",
       loadMore: "Cargar más...",
+      detail: {
+        visitWebsite: "Visitar sitio",
+        projectBrief: "Resumen del proyecto",
+        relatedProjects: "Proyectos relacionados",
+        previousProject: "Proyecto anterior",
+        nextProject: "Siguiente proyecto",
+        labels: {
+          date: "Fecha",
+          client: "Cliente",
+          services: "Servicios",
+          artDirector: "Director de arte",
+        },
+      },
       categories: {
         all: "Todos los proyectos",
         branding: "Branding",
@@ -382,22 +530,72 @@ export const translations = {
         digitalMarketing: {
           title: "Marketing digital",
           description: "Campaña de reconocimiento para startups",
+          summary:
+            "Un sitio de campaña enfocado en conversión, diseñado para posicionar mejor la marca, apoyar objetivos de adquisición y darle al equipo de marketing una presencia digital más sólida.",
+          briefLead:
+            "Creamos una experiencia de campaña con carácter, combinando claridad en el mensaje, una composición editorial moderna y una estructura flexible para futuros lanzamientos.",
+          briefBody:
+            "La dirección final equilibra tipografía contundente, narrativa visual por capas y llamados a la acción claros para que el cliente pueda presentar ofertas, servicios y contenido de campaña de forma premium y fácil de recorrer.",
+          date: "14 de septiembre de 2024",
+          client: "North Peak Marketing",
+          servicesLabel: "Branding, Sitios web",
+          artDirector: "Jackson Smith",
         },
         bookMockup: {
           title: "Mockup editorial",
           description: "Diseño editorial y maquetación",
+          summary:
+            "Una plantilla de presentación editorial creada para mostrar historias de producto con mejor jerarquía, espacios más limpios y un lenguaje visual más táctil.",
+          briefLead:
+            "Este proyecto se enfocó en entregar al cliente un sistema visual listo para lanzamiento, útil tanto en promoción digital como en piezas con aire editorial.",
+          briefBody:
+            "Refinamos composición, dirección de arte y encuadre de imagen para que cada pieza se sienta consistente y sea fácil de reutilizar en campañas, redes y presentaciones de producto.",
+          date: "3 de julio de 2024",
+          client: "Oakline Publishing",
+          servicesLabel: "Diseño, Branding",
+          artDirector: "Melissa Grant",
         },
         ecommerceWebsite: {
           title: "Sitio e-commerce",
           description: "Experiencia de compra moderna",
+          summary:
+            "Un concepto de tienda moderna centrado en una navegación más fluida, mayor confianza y una presentación de producto más clara en desktop y móvil.",
+          briefLead:
+            "El rediseño modernizó el recorrido de compra y redujo fricción entre descubrimiento, revisión del producto e intención de compra.",
+          briefBody:
+            "Priorizamos imagen de producto, jerarquía visual y señales de interacción para apoyar conversión y hacer que la experiencia se sienta premium sin volverse recargada.",
+          date: "8 de noviembre de 2024",
+          client: "Sienna Commerce",
+          servicesLabel: "Sitios web, Estrategia",
+          artDirector: "Noah Carter",
         },
         brandIdentity: {
           title: "Identidad de marca",
           description: "Sistema completo de branding",
+          summary:
+            "Un sistema completo de identidad que le da al negocio una voz más clara, una apariencia más distintiva y una base más sólida para su despliegue digital.",
+          briefLead:
+            "Construimos un toolkit de marca pensado para mantenerse consistente en web, campañas y contenido social sin perder personalidad.",
+          briefBody:
+            "El sistema incluye dirección tipográfica, decisiones de color, principios de composición y recursos visuales flexibles que pueden escalar a medida que el negocio crece.",
+          date: "22 de mayo de 2024",
+          client: "Verve Studio",
+          servicesLabel: "Branding, Estrategia",
+          artDirector: "Sophia Turner",
         },
         uxStrategy: {
           title: "Estrategia UX",
           description: "Mejoras de usabilidad del producto",
+          summary:
+            "Una iniciativa de usabilidad enfocada en aclarar flujos, reducir fricción en la interfaz y mejorar la toma de decisiones dentro de la experiencia principal.",
+          briefLead:
+            "El trabajo alineó objetivos del negocio con cambios prácticos de interfaz para que el producto se entienda mejor y sea más fácil de usar.",
+          briefBody:
+            "Mapeamos recorridos clave, priorizamos cuellos de botella y convertimos esos hallazgos en recomendaciones de interfaz que pueden implementarse de forma gradual con impacto medible.",
+          date: "17 de enero de 2025",
+          client: "Atlas Product Lab",
+          servicesLabel: "Estrategia, Diseño",
+          artDirector: "Ethan Brooks",
         },
       },
     },
