@@ -2,11 +2,12 @@
 @use "mixins" as *;
 
 .navigation {
-  @include section-shell();
+  @include full-shell();
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-block: 28px;
+  min-height: 108px;
+  padding: 28px 40px;
   gap: 24px;
 }
 
@@ -156,7 +157,8 @@
 
 @include tablet {
     .navigation {
-        padding-block: 24px;
+        min-height: 96px;
+        padding: 24px 32px;
     }
 
     .logo-text {
@@ -174,7 +176,8 @@
 
 @include mobile {
     .navigation {
-        padding-block: 20px;
+        min-height: 84px;
+        padding: 20px;
         gap: 16px;
     }
 
@@ -203,7 +206,8 @@
 
 @include mobile-small {
     .navigation {
-        padding-block: 16px;
+        min-height: 76px;
+        padding: 16px;
     }
 
     .logo-text {
