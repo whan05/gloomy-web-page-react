@@ -1,3 +1,6 @@
+@use "tokens" as *;
+@use "mixins" as *;
+
 .menu-overlay {
   position: fixed;
   inset: 0;
@@ -17,7 +20,7 @@
   padding: 60px;
   position: relative;
   animation: scaleIn 0.3s ease;
-  color: #fff;
+  color: $color-white;
 }
 
 @keyframes scaleIn {
@@ -57,17 +60,17 @@
 .menu-nav a {
   font-size: 64px;
   font-weight: 700;
-  color: #fff;
+  color: $color-white;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .menu-nav a.active {
-  color: #ffb199;
+  color: $color-accent-peach;
 }
 
 .menu-nav a:hover {
-  color: #ffb199;
+  color: $color-accent-peach;
 }
 
 .menu-info {

@@ -1,25 +1,27 @@
+@use "tokens" as *;
+@use "mixins" as *;
+
  /* Portfolio */ 
  
 .portfolio {
-  background: #000;
+  background: $color-black;
   padding-bottom: 100px;
 }
 
 .portfolio-grid {
+  @include section-shell();
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  padding: 0 60px;
 }
 
-@media (max-width: 1024px) {
+@include tablet {
   .portfolio {
     padding-bottom: 72px;
   }
 
   .portfolio-grid {
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 32px;
     gap: 24px;
   }
 }
@@ -27,7 +29,6 @@
 @media (max-width: 600px) {
   .portfolio-grid {
     grid-template-columns: 1fr;
-    padding: 0 20px;
     gap: 20px;
   }
 }
@@ -38,7 +39,7 @@
 .portfolio-title-wrapper {
   overflow: hidden;
   white-space: nowrap;
-  background: #000;
+  background: $color-black;
   padding: 40px 0;
 }
 
@@ -51,11 +52,11 @@
 .portfolio-title-track span {
   font-size: 120px;
   font-weight: 600;
-  color: #fff;
+  color: $color-white;
   text-transform: lowercase;
 }
 
-@media (max-width: 1024px) {
+@include tablet {
   .portfolio-title-wrapper {
     padding: 28px 0;
   }
@@ -77,23 +78,23 @@
  /* Portfolio Filters */
 
 .portfolio-filters {
+  @include section-shell();
   display: flex;
   justify-content: center;
   gap: 30px;
   margin: 40px 0;
   flex-wrap: wrap;
-  padding: 0 20px;
 }
 
 .portfolio-filters button {
   background: none;
   border: none;
-  color: #aaa;
+  color: $color-border-muted;
   font-size: 32px;
   cursor: pointer;
 }
 
-@media (max-width: 1024px) {
+@include tablet {
   .portfolio-filters button {
     font-size: 24px;
   }
@@ -112,14 +113,14 @@
 }
 
 .portfolio-filters button.active {
-  color: #fff;
+  color: $color-white;
   text-decoration: underline;
 }
 
 
  /* Portfolio Card */
 
- .portfolio-card {
+.portfolio-card {
   position: relative;
   border-radius: 20px;
   overflow: hidden;
@@ -140,8 +141,8 @@
 .portfolio-card-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.55);
-  color: #fff;
+  background: $color-overlay;
+  color: $color-white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -162,18 +163,19 @@
 }
 
 .portfolio-load-more {
+  @include section-shell();
   display: flex;
   justify-content: center;
-  padding: 72px 20px 0;
+  padding-top: 72px;
 }
 
 .portfolio-load-more__button {
   background: transparent;
-  border: 2px solid #ffffff;
+  border: 2px solid $color-white;
   border-radius: 999px;
-  color: #ffffff;
+  color: $color-white;
   cursor: pointer;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: $font-primary;
   font-size: 20px;
   font-weight: 500;
   min-width: 336px;
@@ -182,8 +184,8 @@
 }
 
 .portfolio-load-more__button:hover {
-  background: #ffffff;
-  color: #000000;
+  background: $color-white;
+  color: $color-black;
 }
 
 @media (max-width: 600px) {

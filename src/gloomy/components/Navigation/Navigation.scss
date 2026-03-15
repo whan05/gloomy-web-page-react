@@ -1,9 +1,13 @@
+@use "tokens" as *;
+@use "mixins" as *;
+
 .navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 28px 50px;
-    gap: 24px;
+  @include section-shell();
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 28px;
+  gap: 24px;
 }
 
 .logo-section {
@@ -24,8 +28,8 @@
 }
 
 .logo-text {
-    font-family: "Space Grotesk", sans-serif;
-    color: #000000;
+    font-family: $font-primary;
+    color: $color-black;
     font-size: 32px;
     font-weight: 500;
     margin: 0;
@@ -42,18 +46,18 @@
 
 .horizotal-menu a {
     text-decoration: none;
-    font-family: "Space Grotesk", sans-serif;
-    color: #000000;
+    font-family: $font-primary;
+    color: $color-black;
     font-size: 19px;
     font-weight: 500;
 }
 
 .horizotal-menu a.active {
-    color: #ffb199;
+    color: $color-accent-peach;
 }
 
 .horizotal-menu a:hover {
-    color: #ffb199;
+    color: $color-accent-peach;
 }
 
 .navigation-actions {
@@ -66,7 +70,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    font-family: "Space Grotesk", sans-serif;
+    font-family: $font-primary;
     font-size: 14px;
     font-weight: 500;
 }
@@ -77,11 +81,11 @@
 
 .language-picker-trigger,
 .language-picker-option {
-    border: 1px solid #000000;
-    background: #ffffff;
-    color: #000000;
+    border: 1px solid $color-black;
+    background: $color-white;
+    color: $color-black;
     cursor: pointer;
-    font-family: "Space Grotesk", sans-serif;
+    font-family: $font-primary;
     font-size: 14px;
     font-weight: 500;
     transition: background-color 0.2s ease;
@@ -101,11 +105,11 @@
 .language-picker-option:hover,
 .language-picker-option:focus-visible,
 .language-picker-option.active {
-    background-color: #fff9a6;
+    background-color: $color-accent-yellow;
 }
 
 .language-picker-trigger:hover {
-    background-color: #ffffff;
+    background-color: $color-white;
 }
 
 .language-picker-trigger:focus-visible,
@@ -150,9 +154,9 @@
     font-size: 40px;
 }
 
-@media (max-width: 1024px) {
+@include tablet {
     .navigation {
-        padding: 24px 32px;
+        padding-block: 24px;
     }
 
     .logo-text {
@@ -168,9 +172,9 @@
     }
 }
 
-@media (max-width: 768px) {
+@include mobile {
     .navigation {
-        padding: 20px;
+        padding-block: 20px;
         gap: 16px;
     }
 
@@ -197,9 +201,9 @@
     }
 }
 
-@media (max-width: 480px) {
+@include mobile-small {
     .navigation {
-        padding: 16px;
+        padding-block: 16px;
     }
 
     .logo-text {

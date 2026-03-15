@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLanguage } from "../../i18n/LanguageContext";
-import "./ScrollToTopButton.css";
+import "./ScrollToTopButton.scss";
 
 export const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);

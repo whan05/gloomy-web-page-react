@@ -2,7 +2,7 @@ import { ReviewCard } from "./ReviewCard";
 import { ReviewBrandRow } from "./ReviewBrandRow";
 import { useLanguage } from "../../i18n/LanguageContext";
 import { getReviewItems, reviewBrands } from "../../data/reviewsData";
-import "./Reviews.css";
+import "./Reviews.scss";
 
 export const ReviewsSection = () => {
   const { t } = useLanguage();

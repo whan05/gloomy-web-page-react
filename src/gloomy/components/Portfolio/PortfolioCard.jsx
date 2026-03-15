@@ -1,4 +1,4 @@
-import './Portfolio.css'
+import './Portfolio.scss'
 
 export const PortfolioCard = ({ image, title, description }) => {
   return (

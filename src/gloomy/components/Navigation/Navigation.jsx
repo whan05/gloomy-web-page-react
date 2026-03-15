@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { MenuModal } from "../";
 import { useLanguage } from "../../i18n/LanguageContext";
 
-import "./Navigation.css";
+import "./Navigation.scss";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);

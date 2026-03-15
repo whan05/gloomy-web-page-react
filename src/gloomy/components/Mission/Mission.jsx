@@ -1,6 +1,6 @@
 import { mission } from "../../../assets/images";
 import { useLanguage } from "../../i18n/LanguageContext";
-import "./Mission.css";
+import "./Mission.scss";
 
 export const Mission = () => {
   const { t } = useLanguage();

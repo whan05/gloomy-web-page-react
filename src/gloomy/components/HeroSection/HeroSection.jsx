@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./HeroSection.css";
+import "./HeroSection.scss";
 import { NavLink } from "react-router-dom";
 import { useLanguage } from "../../i18n/LanguageContext";
 

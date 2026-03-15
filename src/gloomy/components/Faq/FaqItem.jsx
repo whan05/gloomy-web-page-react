@@ -1,4 +1,4 @@
-import "./Faq.css";
+import "./Faq.scss";
 
 export const FaqItem = ({ title, description, isOpen, onToggle }) => {
   return (

@@ -1,4 +1,4 @@
-import "./Reviews.css";
+import "./Reviews.scss";
 
 export const ReviewCard = ({ name, role, content }) => {
   return (

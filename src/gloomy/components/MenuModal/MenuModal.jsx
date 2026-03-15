@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useLanguage } from "../../i18n/LanguageContext";
-import "./MenuModal.css";
+import "./MenuModal.scss";
 
 export const MenuModal = ({ isOpen, onClose }) => {
   const { t } = useLanguage();

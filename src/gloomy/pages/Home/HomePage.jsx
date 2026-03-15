@@ -3,7 +3,7 @@ import { HeroSection, ServicesSection, Statistic, Mission, Portfolio, ReviewsSec
 import { banner } from '../../../assets/images'
 import { useLanguage } from '../../i18n/LanguageContext'
 
-import './HomePage.css'
+import './HomePage.scss'
 
 export const HomePage = () => {
   const { t } = useLanguage();
