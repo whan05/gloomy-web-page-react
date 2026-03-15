@@ -161,6 +161,31 @@
   margin-bottom: 10px;
 }
 
+.portfolio-load-more {
+  display: flex;
+  justify-content: center;
+  padding: 72px 20px 0;
+}
+
+.portfolio-load-more__button {
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 999px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  min-width: 336px;
+  padding: 20px 40px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.portfolio-load-more__button:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
 @media (max-width: 600px) {
   .portfolio-card-overlay {
     opacity: 1;
@@ -171,5 +196,15 @@
 
   .portfolio-card-overlay h3 {
     font-size: 20px;
+  }
+
+  .portfolio-load-more {
+    padding-top: 40px;
+  }
+
+  .portfolio-load-more__button {
+    font-size: 18px;
+    min-width: 100%;
+    padding: 18px 24px;
   }
 }
