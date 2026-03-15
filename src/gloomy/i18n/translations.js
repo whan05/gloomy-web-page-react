@@ -10,6 +10,7 @@ export const translations = {
     common: {
       readMore: "Read more",
       openMenu: "Open menu",
+      scrollTop: "Back to top",
       copyright: "Copyright © Gloomy Studios",
     },
     nav: {
@@ -106,8 +107,47 @@ export const translations = {
         },
       },
     },
+    faq: {
+      title: "FAQs",
+      support:
+        "Didn’t find your answer here? Just send us a message and we’ll contact you.",
+      cta: "Send a message",
+      items: {
+        packages: {
+          question: "What kind of website packages do you offer?",
+          answer:
+            "These packages include a comprehensive redesign and optimisation of up to 12 pages, ensuring cohesive branding, effective messaging and strong calls to action. Alternatively, for a focused improvement, we offer optimisation of a single key page.",
+        },
+        websiteValue: {
+          question: "Why is a professionally designed website crucial for my business?",
+          answer:
+            "A strong website builds trust, improves first impressions, communicates your value clearly and creates a smoother path from visitor interest to conversion.",
+        },
+        brandStrategy: {
+          question: "What is brand strategy and why is it important for my business?",
+          answer:
+            "Brand strategy defines how your business is positioned, how it should be perceived and how it stays consistent across touchpoints so marketing and design work with more impact.",
+        },
+        results: {
+          question: "What results can I expect from your website design agency?",
+          answer:
+            "You can expect a clearer digital presence, stronger user experience, improved credibility and a site built to support enquiries, sales or whatever action matters most to your business.",
+        },
+        marketingStrategy: {
+          question: "Why is marketing strategy important for my business?",
+          answer:
+            "Marketing strategy helps prioritize the right audience, channels and message so your time and budget are spent on actions that move the business forward.",
+        },
+        leadingAgency: {
+          question: "What makes you a leading marketing agency?",
+          answer:
+            "We combine strategy, design and execution in one process, keeping decisions practical, visually strong and aligned with measurable business goals.",
+        },
+      },
+    },
     portfolio: {
       marquee: "portfolio",
+      loadMore: "Load more...",
       categories: {
         all: "All projects",
         branding: "Branding",
@@ -192,6 +232,7 @@ export const translations = {
     common: {
       readMore: "Ver más",
       openMenu: "Abrir menú",
+      scrollTop: "Volver arriba",
       copyright: "Copyright © Gloomy Studios",
     },
     nav: {
@@ -288,8 +329,47 @@ export const translations = {
         },
       },
     },
+    faq: {
+      title: "FAQs",
+      support:
+        "¿No encontraste aquí tu respuesta? Envíanos un mensaje y te contactaremos.",
+      cta: "Enviar mensaje",
+      items: {
+        packages: {
+          question: "¿Qué tipo de paquetes de sitios web ofrecen?",
+          answer:
+            "Estos paquetes incluyen un rediseño y optimización integral de hasta 12 páginas, asegurando una marca coherente, mensajes efectivos y llamados a la acción sólidos. Como alternativa, para una mejora puntual, ofrecemos optimización de una sola página clave.",
+        },
+        websiteValue: {
+          question: "¿Por qué un sitio web diseñado profesionalmente es crucial para mi negocio?",
+          answer:
+            "Un sitio web sólido genera confianza, mejora la primera impresión, comunica claramente tu valor y crea un camino más fluido desde el interés del visitante hasta la conversión.",
+        },
+        brandStrategy: {
+          question: "¿Qué es la estrategia de marca y por qué es importante para mi negocio?",
+          answer:
+            "La estrategia de marca define cómo se posiciona tu negocio, cómo debe percibirse y cómo se mantiene consistente en cada punto de contacto para que marketing y diseño tengan mayor impacto.",
+        },
+        results: {
+          question: "¿Qué resultados puedo esperar de su agencia de diseño web?",
+          answer:
+            "Puedes esperar una presencia digital más clara, mejor experiencia de usuario, mayor credibilidad y un sitio pensado para apoyar consultas, ventas o la acción más importante para tu negocio.",
+        },
+        marketingStrategy: {
+          question: "¿Por qué la estrategia de marketing es importante para mi negocio?",
+          answer:
+            "La estrategia de marketing ayuda a priorizar la audiencia, los canales y el mensaje correctos para que tu tiempo y presupuesto se enfoquen en acciones que hagan avanzar el negocio.",
+        },
+        leadingAgency: {
+          question: "¿Qué los hace una agencia líder en marketing?",
+          answer:
+            "Combinamos estrategia, diseño y ejecución en un solo proceso, manteniendo cada decisión práctica, visualmente sólida y alineada con objetivos de negocio medibles.",
+        },
+      },
+    },
     portfolio: {
       marquee: "portafolio",
+      loadMore: "Cargar más...",
       categories: {
         all: "Todos los proyectos",
         branding: "Branding",

@@ -1,5 +1,5 @@
 import React from 'react'
-import { HeroSection, ServicesSection, Statistic, Mission, Portfolio, ReviewsSection } from '../../components'
+import { HeroSection, ServicesSection, Statistic, Mission, Portfolio, ReviewsSection, FaqSection } from '../../components'
 import { banner } from '../../../assets/images'
 import { useLanguage } from '../../i18n/LanguageContext'
 
@@ -28,6 +28,9 @@ export const HomePage = () => {
       </div>
       <div className="reviews-section">
         <ReviewsSection/>
+      </div>
+      <div className="faq-home-section">
+        <FaqSection/>
       </div>
     </div>
   )
