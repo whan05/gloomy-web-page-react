@@ -1,38 +1,40 @@
+import { projectCover } from "../../assets/images";
+
 export const portfolioItems = [
   {
     id: 1,
     title: "Digital Marketing",
     description: "Brand awareness campaign for startups",
     category: "Marketing",
-    image: "/images/portfolio1.jpg",
+    image: projectCover,
   },
   {
     id: 2,
     title: "Book Mockup",
     description: "Editorial design & layout",
     category: "Design",
-    image: "/images/portfolio2.jpg",
+    image: projectCover,
   },
   {
     id: 3,
     title: "E-commerce Website",
     description: "Modern shopping experience",
     category: "Websites",
-    image: "/images/portfolio3.jpg",
+image: projectCover,
   },
   {
     id: 4,
     title: "Brand Identity",
     description: "Complete branding system",
     category: "Branding",
-    image: "/images/portfolio4.jpg",
+    image: projectCover,
   },
   {
     id: 5,
     title: "UX Strategy",
     description: "Product usability improvements",
     category: "Strategy",
-    image: "/images/portfolio5.jpg",
+    image: projectCover,
   }
 ];
 
