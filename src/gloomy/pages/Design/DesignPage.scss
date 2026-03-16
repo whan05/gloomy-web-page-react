@@ -11,10 +11,11 @@
     url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80")
       center right / cover no-repeat;
   border-radius: $radius-xl;
-  min-height: 330px;
+  min-height: 600px;
   display: flex;
   align-items: center;
   margin-top: $space-sm;
+  min-width: 100vw;
 }
 
 .design-page__hero h1 {

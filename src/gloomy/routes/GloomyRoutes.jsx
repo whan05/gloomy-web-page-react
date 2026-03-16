@@ -5,7 +5,6 @@ import {
   WebsitesPage,
   OurWorkPage,
   AboutPage,
-  ServicesPage,
   ContactPage,
   ProjectDetailPage,
 } from "../pages";
@@ -20,7 +19,6 @@ export const GloomylRoutes = () => {
         <Route path="/design" element={<DesignPage />} />
         <Route path="/our-work" element={<OurWorkPage />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/services" element={<ServicesPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/our-work/:projectSlug" element={<ProjectDetailPage />} />
         <Route path="/*" element={<Navigate to="/" />} />

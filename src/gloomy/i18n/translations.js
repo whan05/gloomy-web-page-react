@@ -79,12 +79,24 @@ export const translations = {
         title: "Write us a message:",
         description: "For short and sweet brand and website questions...",
         submit: "Send Message",
+        submitting: "Sending...",
+        success:
+          "Thanks. Your message was sent successfully.",
+        error:
+          "We could not send your message right now. Please try again in a moment.",
         fields: {
           name: "Name*",
           email: "Email Address*",
           phone: "Phone Number*",
           website: "Website*",
           message: "Message",
+        },
+        validation: {
+          name: "Please enter your name.",
+          email: "Please enter a valid email address.",
+          phone: "Please enter your phone number.",
+          website: "Please enter your website or company URL.",
+          message: "Please enter a short message.",
         },
       },
       visit: {
@@ -493,12 +505,24 @@ export const translations = {
         title: "Escríbenos un mensaje:",
         description: "Para dudas breves y claras sobre marca y sitios web...",
         submit: "Enviar mensaje",
+        submitting: "Enviando...",
+        success:
+          "Gracias. Tu mensaje fue enviado correctamente.",
+        error:
+          "No pudimos enviar tu mensaje en este momento. Inténtalo de nuevo en unos minutos.",
         fields: {
           name: "Nombre*",
           email: "Correo electrónico*",
           phone: "Número de teléfono*",
           website: "Sitio web*",
           message: "Mensaje",
+        },
+        validation: {
+          name: "Por favor ingresa tu nombre.",
+          email: "Por favor ingresa un correo electrónico válido.",
+          phone: "Por favor ingresa tu número de teléfono.",
+          website: "Por favor ingresa tu sitio web o URL de empresa.",
+          message: "Por favor escribe un mensaje breve.",
         },
       },
       visit: {

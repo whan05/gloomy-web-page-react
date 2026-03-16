@@ -73,6 +73,7 @@
   transition: color 0.3s;
 }
 
+
 .menu-nav a.active {
   color: $color-accent-peach;
 }
@@ -156,8 +157,17 @@
     line-height: 1.02;
   }
 
+    .menu-nav p {
+      font-size: clamp(28px, 9vw, 42px);
+      line-height: 1.02;
+      font-weight: 700;
+      color: $color-white;
+      margin: 8px 0;
+    }
+
   .menu-mobile-submenu a {
-    font-size: clamp(24px, 8vw, 34px);
+    font-size: clamp(28px, 9vw, 42px);
+
   }
 
   .menu-info {
