@@ -51,7 +51,7 @@ export const handler = async (event) => {
     const website = payload.website?.trim();
     const message = payload.message?.trim();
 
-    if (!name || !email || !phone || !website || !message) {
+    if (!name || !email || !message) {
       return createResponse(400, {
         error: "Missing required contact form fields.",
       });
@@ -59,8 +59,8 @@ export const handler = async (event) => {
 
     const safeName = escapeHtml(name);
     const safeEmail = escapeHtml(email);
-    const safePhone = escapeHtml(phone);
-    const safeWebsite = escapeHtml(website);
+    const safePhone = escapeHtml(phone || "Not provided");
+    const safeWebsite = escapeHtml(website || "Not provided");
     const safeMessage = escapeHtml(message).replaceAll("\n", "<br />");
 
     await sendEmail({

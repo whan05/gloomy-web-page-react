@@ -7,6 +7,7 @@ import './ContactPage.scss'
 export const ContactPage = () => {
   const { t } = useLanguage()
   const fieldKeys = ["name", "email", "phone", "website"]
+  const requiredFieldKeys = ["name", "email"]
   const [submitState, setSubmitState] = useState({
     status: "idle",
     message: "",
@@ -47,6 +48,13 @@ export const ContactPage = () => {
     }
   }
 
+  const onInvalid = () => {
+    setSubmitState({
+      status: "error",
+      message: t("contactLanding.form.validation.required"),
+    })
+  }
+
   return (
     <section className="contact-page">
       <div className="contact-page__top">
@@ -68,7 +76,7 @@ export const ContactPage = () => {
 
         <form
           className="contact-page__form"
-          onSubmit={handleSubmit(onSubmit)}
+          onSubmit={handleSubmit(onSubmit, onInvalid)}
         >
           <div className="contact-page__field-grid">
             {fieldKeys.map((fieldKey) => (
@@ -78,7 +86,9 @@ export const ContactPage = () => {
                   placeholder={t(`contactLanding.form.fields.${fieldKey}`)}
                   type={fieldKey === "email" ? "email" : fieldKey === "phone" ? "tel" : "text"}
                   {...register(fieldKey, {
-                    required: t(`contactLanding.form.validation.${fieldKey}`),
+                    required: requiredFieldKeys.includes(fieldKey)
+                      ? t(`contactLanding.form.validation.${fieldKey}`)
+                      : false,
                     pattern:
                       fieldKey === "email"
                         ? {
