@@ -153,10 +153,68 @@ export const translations = {
       title:
         "Our mission is simple yet profound: to elevate brands, engage audiences, and drive tangible growth.",
     },
+    aboutPage: {
+      eyebrow: "About us",
+      titleStart: "Welcome to",
+      titleAccentOne: "marketing",
+      titleMiddle: "your",
+      titleAccentTwo: "brand",
+      heroBody:
+        "We turn strategy, design, and development into digital work that feels clear, useful, and difficult to ignore.",
+      cta: "Contact us",
+      introTitle: "We do marketing. And we do it well.",
+      introBody:
+        "At Marketing Your Brand, we do not just create and build. We clarify what makes you valuable, shape how people experience it, and build the systems that help your business keep moving.",
+      approachBody:
+        "We are a boutique marketing agency that champions people-first, impactful strategies, bringing brands to life with a blend of creativity, technology, and heart.",
+      storyTitle: "Our story",
+      storyItems: {
+        year2020: {
+          year: "2020",
+          title: "The first client engagements shaped our process.",
+          description:
+            "We started by helping small businesses sharpen positioning, improve their websites, and define a more coherent digital presence. That early work set the standard for the way we still collaborate today.",
+        },
+        year2021: {
+          year: "2021",
+          title: "We formalized our collaborative workflow.",
+          description:
+            "By this point we had turned our approach into a repeatable process: strategy first, then messaging, then design and implementation. Clients valued the clarity as much as the final output.",
+        },
+        year2022: {
+          year: "2022",
+          title: "Brand and website work began scaling together.",
+          description:
+            "More projects started combining identity systems with conversion-focused web design, which pushed us to align visual direction, content structure, and technical delivery more tightly.",
+        },
+        year2023: {
+          year: "2023",
+          title: "We expanded into more ambitious digital engagements.",
+          description:
+            "The studio took on broader digital scopes, from product storytelling and campaign pages to more structured website ecosystems designed to support long-term growth.",
+        },
+        year2024: {
+          year: "2024",
+          title: "The studio refined a sharper point of view.",
+          description:
+            "We doubled down on practical strategy, bold visual systems, and responsive development so every project feels distinctive while still serving measurable business goals.",
+        },
+      },
+      fitTitle: "You'll love working with us if:",
+      fitItems: [
+        "You want strategy and execution to feel connected.",
+        "You value clean communication and steady momentum.",
+        "You care about design that supports business goals.",
+        "You need a team that can challenge weak assumptions.",
+        "You want a partner who stays practical as the work evolves.",
+      ],
+    },
     reviews: {
       title: "What our clients say",
       description:
         "Our clients’ reviews clearly demonstrate how efficient our collaborative approach is.",
+      previousReview: "Previous review",
+      nextReview: "Next review",
       items: {
         anthony: {
           name: "Anthony Jhone",
@@ -509,10 +567,68 @@ export const translations = {
       title:
         "Nuestra misión es simple pero profunda: elevar marcas, conectar audiencias e impulsar un crecimiento tangible.",
     },
+    aboutPage: {
+      eyebrow: "Nosotros",
+      titleStart: "Bienvenido a",
+      titleAccentOne: "marketing",
+      titleMiddle: "tu",
+      titleAccentTwo: "marca",
+      heroBody:
+        "Convertimos estrategia, diseño y desarrollo en trabajo digital que se siente claro, útil y difícil de ignorar.",
+      cta: "Contáctanos",
+      introTitle: "Hacemos marketing. Y lo hacemos bien.",
+      introBody:
+        "En Marketing Your Brand no solo creamos y construimos. Aclaramos qué hace valioso tu negocio, damos forma a cómo la gente lo percibe y construimos sistemas que ayudan a tu marca a seguir avanzando.",
+      approachBody:
+        "Somos una agencia boutique de marketing que prioriza a las personas y crea estrategias con impacto, dando vida a las marcas con una mezcla de creatividad, tecnología y criterio.",
+      storyTitle: "Nuestra historia",
+      storyItems: {
+        year2020: {
+          year: "2020",
+          title: "Los primeros clientes definieron nuestro proceso.",
+          description:
+            "Comenzamos ayudando a pequeños negocios a afinar su posicionamiento, mejorar sus sitios web y construir una presencia digital más coherente. Ese trabajo inicial fijó el estándar con el que seguimos colaborando hoy.",
+        },
+        year2021: {
+          year: "2021",
+          title: "Formalizamos un flujo de trabajo colaborativo.",
+          description:
+            "Para entonces ya habíamos convertido nuestro enfoque en un proceso repetible: primero estrategia, luego mensajes, después diseño e implementación. Los clientes valoraron esa claridad tanto como el resultado final.",
+        },
+        year2022: {
+          year: "2022",
+          title: "Branding y web empezaron a escalar juntos.",
+          description:
+            "Más proyectos comenzaron a combinar sistemas de identidad con diseño web orientado a conversión, lo que nos llevó a alinear mejor la dirección visual, la estructura del contenido y la ejecución técnica.",
+        },
+        year2023: {
+          year: "2023",
+          title: "Asumimos proyectos digitales más ambiciosos.",
+          description:
+            "El estudio empezó a trabajar en alcances más amplios, desde storytelling de producto y landing campaigns hasta ecosistemas web más estructurados pensados para crecimiento sostenido.",
+        },
+        year2024: {
+          year: "2024",
+          title: "Refinamos un punto de vista más claro.",
+          description:
+            "Reforzamos nuestra apuesta por estrategia práctica, sistemas visuales contundentes y desarrollo responsive para que cada proyecto se sienta distintivo y al mismo tiempo responda a objetivos reales de negocio.",
+        },
+      },
+      fitTitle: "Te encantará trabajar con nosotros si:",
+      fitItems: [
+        "Quieres que la estrategia y la ejecución se sientan conectadas.",
+        "Valoras una comunicación clara y un avance constante.",
+        "Te importa un diseño que apoye objetivos de negocio.",
+        "Necesitas un equipo que cuestione supuestos débiles.",
+        "Quieres un partner práctico a medida que el proyecto evoluciona.",
+      ],
+    },
     reviews: {
       title: "Lo que dicen nuestros clientes",
       description:
         "Las reseñas de nuestros clientes demuestran con claridad lo eficiente que es nuestro enfoque colaborativo.",
+      previousReview: "Reseña anterior",
+      nextReview: "Siguiente reseña",
       items: {
         anthony: {
           name: "Anthony Jhone",

@@ -189,11 +189,8 @@
   }
 
   .our-work-page__review-stage {
-    grid-template-columns: 1fr;
-  }
-
-  .our-work-page__review-nav {
-    display: none;
+    gap: $space-md;
+    grid-template-columns: 42px minmax(0, 1fr) 42px;
   }
 }
 
@@ -227,6 +224,17 @@
 
   .our-work-page__reviews-intro h2 {
     max-width: 100%;
+  }
+
+  .our-work-page__review-stage {
+    gap: $space-sm;
+    grid-template-columns: 36px minmax(0, 1fr) 36px;
+  }
+
+  .our-work-page__review-nav {
+    font-size: 28px;
+    height: 36px;
+    width: 36px;
   }
 
   .our-work-page__review-content {
