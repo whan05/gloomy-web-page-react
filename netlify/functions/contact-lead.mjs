@@ -27,8 +27,8 @@ const sendEmail = async ({ apiKey, payload }) => {
   });
 };
 
-export default async (request) => {
-  if (request.httpMethod !== "POST") {
+export const handler = async (event) => {
+  if (event.httpMethod !== "POST") {
     return createResponse(405, { error: "Method not allowed." });
   }
 
@@ -44,14 +44,14 @@ export default async (request) => {
   }
 
   try {
-    const payload = JSON.parse(request.body ?? "{}");
+    const payload = JSON.parse(event.body ?? "{}");
     const name = payload.name?.trim();
     const email = payload.email?.trim().toLowerCase();
     const phone = payload.phone?.trim();
     const website = payload.website?.trim();
     const message = payload.message?.trim();
 
-    if (!name || !email || !phone || !website || !message) {
+    if (!name || !email || !message) {
       return createResponse(400, {
         error: "Missing required contact form fields.",
       });
@@ -59,8 +59,8 @@ export default async (request) => {
 
     const safeName = escapeHtml(name);
     const safeEmail = escapeHtml(email);
-    const safePhone = escapeHtml(phone);
-    const safeWebsite = escapeHtml(website);
+    const safePhone = escapeHtml(phone || "Not provided");
+    const safeWebsite = escapeHtml(website || "Not provided");
     const safeMessage = escapeHtml(message).replaceAll("\n", "<br />");
 
     await sendEmail({

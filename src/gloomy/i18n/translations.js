@@ -87,8 +87,8 @@ export const translations = {
         fields: {
           name: "Name*",
           email: "Email Address*",
-          phone: "Phone Number*",
-          website: "Website*",
+          phone: "Phone Number",
+          website: "Website",
           message: "Message",
         },
         validation: {
@@ -97,6 +97,7 @@ export const translations = {
           phone: "Please enter your phone number.",
           website: "Please enter your website or company URL.",
           message: "Please enter a short message.",
+          required: "Please complete name and email before sending.",
         },
       },
       visit: {
@@ -513,8 +514,8 @@ export const translations = {
         fields: {
           name: "Nombre*",
           email: "Correo electrónico*",
-          phone: "Número de teléfono*",
-          website: "Sitio web*",
+          phone: "Número de teléfono",
+          website: "Sitio web",
           message: "Mensaje",
         },
         validation: {
@@ -523,6 +524,7 @@ export const translations = {
           phone: "Por favor ingresa tu número de teléfono.",
           website: "Por favor ingresa tu sitio web o URL de empresa.",
           message: "Por favor escribe un mensaje breve.",
+          required: "Por favor completa nombre y correo antes de enviar.",
         },
       },
       visit: {
