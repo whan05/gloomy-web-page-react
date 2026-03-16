@@ -94,6 +94,18 @@
   display: block;
 }
 
+.contact-page__field-error {
+  color: #7a1021;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.contact-page__field-error--inline {
+  margin-top: -8px;
+}
+
 .contact-page__field input,
 .contact-page__field textarea {
   appearance: none;
@@ -121,12 +133,36 @@
   box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.35);
 }
 
+.contact-page__form-status {
+  border-radius: $radius-sm;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0;
+  padding: 16px 18px;
+}
+
+.contact-page__form-status--success {
+  background: rgba(180, 239, 202, 0.55);
+  color: $color-black;
+}
+
+.contact-page__form-status--error {
+  background: rgba(255, 177, 153, 0.55);
+  color: $color-black;
+}
+
 .contact-page__submit {
   @include pill-button(transparent, $color-black, $color-black);
   align-self: center;
   cursor: pointer;
   font-size: 18px;
   padding: 18px 48px;
+}
+
+.contact-page__submit:disabled {
+  cursor: wait;
+  opacity: 0.7;
 }
 
 .contact-page__submit:hover {

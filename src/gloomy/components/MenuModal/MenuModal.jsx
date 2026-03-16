@@ -38,15 +38,7 @@ export const MenuModal = ({ isOpen, onClose }) => {
             </NavLink>
 
             <div className="menu-mobile-group">
-              <NavLink
-                to="/services"
-                onClick={onClose}
-                className={({ isActive }) =>
-                  isActive ? "active" : undefined
-                }
-              >
-                {t("nav.items.services")}
-              </NavLink>
+              <p> {t("nav.items.services")}</p>
 
               <div className="menu-mobile-submenu">
                 <NavLink
