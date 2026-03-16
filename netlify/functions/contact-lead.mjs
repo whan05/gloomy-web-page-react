@@ -27,8 +27,8 @@ const sendEmail = async ({ apiKey, payload }) => {
   });
 };
 
-export default async (request) => {
-  if (request.httpMethod !== "POST") {
+export const handler = async (event) => {
+  if (event.httpMethod !== "POST") {
     return createResponse(405, { error: "Method not allowed." });
   }
 
@@ -44,7 +44,7 @@ export default async (request) => {
   }
 
   try {
-    const payload = JSON.parse(request.body ?? "{}");
+    const payload = JSON.parse(event.body ?? "{}");
     const name = payload.name?.trim();
     const email = payload.email?.trim().toLowerCase();
     const phone = payload.phone?.trim();
