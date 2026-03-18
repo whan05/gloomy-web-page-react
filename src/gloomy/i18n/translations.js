@@ -27,10 +27,10 @@ export const translations = {
       },
     },
     hero: {
-      title: "We build websites & brands people love",
+      title: "We design websites and brands that leave a mark",
       cta: "View Our Work",
       description:
-        "We’re a team of creative web designers and skilled developers who relish in creating purposeful digital experiences that people fall in love with.",
+        "We’re a team of creative designers and specialized developers who craft digital experiences with intention, built to create real connections with people.",
     },
     home: {
       bannerAlt: "Agency banner image",
@@ -454,10 +454,10 @@ export const translations = {
       },
     },
     hero: {
-      title: "Creamos sitios web y marcas que la gente ama",
+      title: "Diseñamos sitios web y marcas que dejan huella",
       cta: "Ver nuestro trabajo",
       description:
-        "Somos un equipo de diseñadores web creativos y desarrolladores expertos que disfrutan crear experiencias digitales con propósito, de esas que conectan de verdad con la gente.",
+        "Somos un equipo de diseñadores creativos y desarrolladores especializados que crea experiencias digitales con intención, pensadas para generar conexiones reales con las personas.",
     },
     home: {
       bannerAlt: "Imagen principal de la agencia",
