@@ -18,6 +18,30 @@ const escapeHtml = (value = "") =>
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#39;");
 
+const extractEmailAddress = (value = "") => {
+  const match = value.match(/<([^>]+)>/);
+  return (match?.[1] || value).trim().toLowerCase();
+};
+
+const getEmailDomain = (value = "") => {
+  const email = extractEmailAddress(value);
+  return email.includes("@") ? email.split("@").pop() : "";
+};
+
+const hasRestrictedSenderDomain = (value = "") => {
+  const restrictedDomains = new Set([
+    "gmail.com",
+    "googlemail.com",
+    "yahoo.com",
+    "hotmail.com",
+    "outlook.com",
+    "live.com",
+    "icloud.com",
+  ]);
+
+  return restrictedDomains.has(getEmailDomain(value));
+};
+
 const sendEmail = async ({ apiKey, payload }) => {
   await axios.post("https://api.resend.com/emails", payload, {
     headers: {
@@ -40,6 +64,13 @@ export const handler = async (event) => {
   if (!apiKey || !from || !to) {
     return createResponse(500, {
       error: "Resend configuration is incomplete on the server.",
+    });
+  }
+
+  if (hasRestrictedSenderDomain(from)) {
+    return createResponse(500, {
+      error:
+        "Invalid CONTACT_FROM_EMAIL. Resend requires a verified sending domain, so do not use addresses like gmail.com. Use an address on your verified domain, for example: Gloomy Studios <hello@yourdomain.com>.",
     });
   }
 
