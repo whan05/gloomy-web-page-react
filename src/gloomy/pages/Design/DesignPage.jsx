@@ -9,7 +9,7 @@ export const DesignPage = () => {
   const { t } = useLanguage()
   const portfolioItems = getPortfolioItems(t)
   const designProjects = portfolioItems
-    .filter((item) => ["design", "branding", "strategy"].includes(item.category))
+    .filter((item) => ["design", "branding", "websites"].includes(item.category))
     .slice(0, 3)
 
   const serviceCards = [

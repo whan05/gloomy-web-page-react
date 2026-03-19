@@ -48,7 +48,6 @@ export const translations = {
         "From structure and messaging to interface and implementation, we shape website systems that are flexible enough for growth and clear enough for your audience to act with confidence.",
       projectsTitle: "Our Website Projects:",
       services: {
-        strategy: "Website Strategy & Structure",
         ux: "UX Systems & Content Flow",
         conversion: "Conversion Page Design",
         development: "Responsive Development",
@@ -139,11 +138,11 @@ export const translations = {
       nextReview: "Next review",
     },
     statistic: {
-      title: "Where creativity meets results",
+      title: "Where ideas perform",
       topText:
-        "We supercharge businesses with standout branding, conversion-focused websites, and content that truly engages, connects, and converts.",
+        "We help ambitious businesses grow through distinctive branding, high-converting websites, and content that captures attention, builds trust, and drives action.",
       bottomText:
-        "We design exceptional brands, products, web apps, mobile apps, and websites for startups and enterprises.",
+        "We create exceptional brands, products, websites, and digital experiences for startups and established businesses.",
       items: {
         completeProjects: "Complete projects",
         websitePages: "Website pages",
@@ -156,49 +155,39 @@ export const translations = {
         websites: {
           title: "Websites",
           description:
-            "High-performing websites built to communicate clearly, load fast, and turn visitors into real opportunities.",
-        },
-        marketing: {
-          title: "Marketing",
-          description:
-            "Campaigns, messaging, and content systems designed to grow awareness and drive measurable action.",
+            "High-performing websites designed to communicate clearly, load quickly, and turn traffic into qualified opportunities.",
         },
         branding: {
           title: "Branding",
           description:
-            "Distinct visual identities and brand systems that make your business recognizable and consistent.",
+            "Distinctive visual identities and brand systems that make your business instantly recognizable and consistently presented.",
         },
         design: {
           title: "Design",
           description:
-            "Digital design work focused on usability, clarity, and a strong visual point of view.",
-        },
-        strategy: {
-          title: "Strategy",
-          description:
-            "Practical direction for positioning, product thinking, and digital execution that supports growth.",
+            "Digital design focused on usability, clarity, and a confident visual point of view.",
         },
       },
     },
     mission: {
       imageAlt: "Creative team workspace representing the agency mission",
       title:
-        "Our mission is simple yet profound: to elevate brands, engage audiences, and drive tangible growth.",
+        "Our mission is clear: elevate brands, engage audiences, and drive meaningful growth.",
     },
     aboutPage: {
       eyebrow: "About us",
       titleStart: "Welcome to",
-      titleAccentOne: "marketing",
+      titleAccentOne: "creative",
       titleMiddle: "your",
       titleAccentTwo: "brand",
       heroBody:
-        "We turn strategy, design, and development into digital work that feels clear, useful, and difficult to ignore.",
+        "We turn branding, design, and development into digital work that feels clear, useful, and difficult to ignore.",
       cta: "Contact us",
-      introTitle: "We do marketing. And we do it well.",
+      introTitle: "We build brands, websites, and design systems.",
       introBody:
         "At Marketing Your Brand, we do not just create and build. We clarify what makes you valuable, shape how people experience it, and build the systems that help your business keep moving.",
       approachBody:
-        "We are a boutique marketing agency that champions people-first, impactful strategies, bringing brands to life with a blend of creativity, technology, and heart.",
+        "We are a boutique digital studio focused on people-first branding, thoughtful design, and websites built to move businesses forward.",
       storyTitle: "Our story",
       storyItems: {
         year2020: {
@@ -294,15 +283,10 @@ export const translations = {
           answer:
             "You can expect a clearer digital presence, stronger user experience, improved credibility and a site built to support enquiries, sales or whatever action matters most to your business.",
         },
-        marketingStrategy: {
-          question: "Why is marketing strategy important for my business?",
-          answer:
-            "Marketing strategy helps prioritize the right audience, channels and message so your time and budget are spent on actions that move the business forward.",
-        },
         leadingAgency: {
-          question: "What makes you a leading marketing agency?",
+          question: "What makes your studio different?",
           answer:
-            "We combine strategy, design and execution in one process, keeping decisions practical, visually strong and aligned with measurable business goals.",
+            "We combine branding, design and execution in one process, keeping decisions practical, visually strong and aligned with measurable business goals.",
         },
       },
     },
@@ -326,25 +310,9 @@ export const translations = {
         all: "All projects",
         branding: "Branding",
         design: "Design",
-        marketing: "Marketing",
-        strategy: "Strategy",
         websites: "Websites",
       },
       items: {
-        digitalMarketing: {
-          title: "Digital Marketing",
-          description: "Brand awareness campaign for startups",
-          summary:
-            "A conversion-focused campaign site designed to position the brand clearly, support acquisition goals, and give the marketing team a sharper digital presence.",
-          briefLead:
-            "We created a bold campaign experience that combines messaging clarity, modern editorial layout, and a flexible structure for future launches.",
-          briefBody:
-            "The final direction balances strong typography, layered product storytelling, and clear calls to action so the client can present offers, services, and campaign content in a way that feels premium and easy to navigate.",
-          date: "September 14, 2024",
-          client: "North Peak Marketing",
-          servicesLabel: "Branding, Websites",
-          artDirector: "Jackson Smith",
-        },
         bookMockup: {
           title: "Book Mockup",
           description: "Editorial design & layout",
@@ -370,7 +338,7 @@ export const translations = {
             "We emphasized product imagery, hierarchy, and interaction cues to support conversion and make the browsing experience feel premium without becoming visually noisy.",
           date: "November 8, 2024",
           client: "Sienna Commerce",
-          servicesLabel: "Websites, Strategy",
+          servicesLabel: "Websites, Design",
           artDirector: "Noah Carter",
         },
         brandIdentity: {
@@ -384,22 +352,8 @@ export const translations = {
             "The system includes typography direction, color decisions, layout principles, and flexible visual assets that can scale as the business grows into new channels.",
           date: "May 22, 2024",
           client: "Verve Studio",
-          servicesLabel: "Branding, Strategy",
+          servicesLabel: "Branding, Design",
           artDirector: "Sophia Turner",
-        },
-        uxStrategy: {
-          title: "UX Strategy",
-          description: "Product usability improvements",
-          summary:
-            "A product usability initiative that clarified user flows, reduced interface friction, and improved decision-making across the core experience.",
-          briefLead:
-            "The work aligned business goals with practical interface changes so the product feels easier to understand and faster to act on.",
-          briefBody:
-            "We mapped key journeys, prioritized bottlenecks, and translated those findings into interface recommendations that can be implemented incrementally with measurable impact.",
-          date: "January 17, 2025",
-          client: "Atlas Product Lab",
-          servicesLabel: "Strategy, Design",
-          artDirector: "Ethan Brooks",
         },
       },
     },
@@ -494,7 +448,6 @@ export const translations = {
         "Desde estructura y mensajes hasta interfaz e implementación, construimos sistemas web lo bastante flexibles para crecer y lo bastante claros para que tu audiencia actúe con confianza.",
       projectsTitle: "Nuestros Proyectos Web:",
       services: {
-        strategy: "Estrategia y Estructura Web",
         ux: "Sistemas UX y Flujo de Contenido",
         conversion: "Diseño de Páginas de Conversión",
         development: "Desarrollo Responsive",
@@ -585,11 +538,11 @@ brandingLanding: {
       nextReview: "Siguiente reseña",
     },
     statistic: {
-      title: "Donde la creatividad genera resultados",
+      title: "Donde las ideas funcionan",
       topText:
-        "Impulsamos negocios con branding memorable, sitios web enfocados en conversión y contenido que realmente atrae, conecta y convierte.",
+        "Ayudamos a empresas ambiciosas a crecer con una marca distintiva, sitios web de alta conversión y contenido que capta la atención, genera confianza e impulsa la acción.",
       bottomText:
-        "Diseñamos marcas, productos, aplicaciones web, apps móviles y sitios web excepcionales para startups y empresas.",
+        "Creamos marcas, productos, sitios web y experiencias digitales excepcionales para startups y empresas consolidadas.",
       items: {
         completeProjects: "Proyectos completados",
         websitePages: "Páginas web",
@@ -602,49 +555,39 @@ brandingLanding: {
         websites: {
           title: "Sitios web",
           description:
-            "Sitios web de alto rendimiento creados para comunicar con claridad, cargar rápido y convertir visitas en oportunidades reales.",
-        },
-        marketing: {
-          title: "Marketing",
-          description:
-            "Campañas, mensajes y sistemas de contenido diseñados para aumentar reconocimiento y generar acciones medibles.",
+            "Sitios web de alto rendimiento diseñados para comunicar con claridad, cargar rápido y convertir tráfico en oportunidades calificadas.",
         },
         branding: {
           title: "Branding",
           description:
-            "Identidades visuales y sistemas de marca que hacen que tu negocio sea reconocible y consistente.",
+            "Identidades visuales distintivas y sistemas de marca que hacen que tu negocio sea reconocible al instante y se presente con coherencia.",
         },
         design: {
           title: "Diseño",
           description:
-            "Trabajo de diseño digital enfocado en usabilidad, claridad y una dirección visual sólida.",
-        },
-        strategy: {
-          title: "Estrategia",
-          description:
-            "Dirección práctica para posicionamiento, pensamiento de producto y ejecución digital orientada al crecimiento.",
+            "Diseño digital enfocado en usabilidad, claridad y un criterio visual firme.",
         },
       },
     },
     mission: {
       imageAlt: "Espacio creativo del equipo que representa la misión de la agencia",
       title:
-        "Nuestra misión es simple pero profunda: elevar marcas, conectar audiencias e impulsar un crecimiento tangible.",
+        "Nuestra misión es clara: elevar marcas, conectar audiencias e impulsar un crecimiento real.",
     },
     aboutPage: {
       eyebrow: "Nosotros",
       titleStart: "Bienvenido a",
-      titleAccentOne: "marketing",
+      titleAccentOne: "creative",
       titleMiddle: "tu",
       titleAccentTwo: "marca",
       heroBody:
-        "Convertimos estrategia, diseño y desarrollo en trabajo digital que se siente claro, útil y difícil de ignorar.",
+        "Convertimos branding, diseño y desarrollo en trabajo digital que se siente claro, útil y difícil de ignorar.",
       cta: "Contáctanos",
-      introTitle: "Hacemos marketing. Y lo hacemos bien.",
+      introTitle: "Creamos marcas, sitios web y sistemas de diseño.",
       introBody:
         "En Marketing Your Brand no solo creamos y construimos. Aclaramos qué hace valioso tu negocio, damos forma a cómo la gente lo percibe y construimos sistemas que ayudan a tu marca a seguir avanzando.",
       approachBody:
-        "Somos una agencia boutique de marketing que prioriza a las personas y crea estrategias con impacto, dando vida a las marcas con una mezcla de creatividad, tecnología y criterio.",
+        "Somos un estudio digital boutique enfocado en branding, diseño y sitios web pensados para hacer avanzar negocios.",
       storyTitle: "Nuestra historia",
       storyItems: {
         year2020: {
@@ -740,15 +683,10 @@ brandingLanding: {
           answer:
             "Puedes esperar una presencia digital más clara, mejor experiencia de usuario, mayor credibilidad y un sitio pensado para apoyar consultas, ventas o la acción más importante para tu negocio.",
         },
-        marketingStrategy: {
-          question: "¿Por qué la estrategia de marketing es importante para mi negocio?",
-          answer:
-            "La estrategia de marketing ayuda a priorizar la audiencia, los canales y el mensaje correctos para que tu tiempo y presupuesto se enfoquen en acciones que hagan avanzar el negocio.",
-        },
         leadingAgency: {
-          question: "¿Qué los hace una agencia líder en marketing?",
+          question: "¿Qué hace diferente a su estudio?",
           answer:
-            "Combinamos estrategia, diseño y ejecución en un solo proceso, manteniendo cada decisión práctica, visualmente sólida y alineada con objetivos de negocio medibles.",
+            "Combinamos branding, diseño y ejecución en un solo proceso, manteniendo cada decisión práctica, visualmente sólida y alineada con objetivos de negocio medibles.",
         },
       },
     },
@@ -772,25 +710,9 @@ brandingLanding: {
         all: "Todos los proyectos",
         branding: "Branding",
         design: "Diseño",
-        marketing: "Marketing",
-        strategy: "Estrategia",
         websites: "Sitios web",
       },
       items: {
-        digitalMarketing: {
-          title: "Marketing digital",
-          description: "Campaña de reconocimiento para startups",
-          summary:
-            "Un sitio de campaña enfocado en conversión, diseñado para posicionar mejor la marca, apoyar objetivos de adquisición y darle al equipo de marketing una presencia digital más sólida.",
-          briefLead:
-            "Creamos una experiencia de campaña con carácter, combinando claridad en el mensaje, una composición editorial moderna y una estructura flexible para futuros lanzamientos.",
-          briefBody:
-            "La dirección final equilibra tipografía contundente, narrativa visual por capas y llamados a la acción claros para que el cliente pueda presentar ofertas, servicios y contenido de campaña de forma premium y fácil de recorrer.",
-          date: "14 de septiembre de 2024",
-          client: "North Peak Marketing",
-          servicesLabel: "Branding, Sitios web",
-          artDirector: "Jackson Smith",
-        },
         bookMockup: {
           title: "Mockup editorial",
           description: "Diseño editorial y maquetación",
@@ -816,7 +738,7 @@ brandingLanding: {
             "Priorizamos imagen de producto, jerarquía visual y señales de interacción para apoyar conversión y hacer que la experiencia se sienta premium sin volverse recargada.",
           date: "8 de noviembre de 2024",
           client: "Sienna Commerce",
-          servicesLabel: "Sitios web, Estrategia",
+          servicesLabel: "Sitios web, Diseño",
           artDirector: "Noah Carter",
         },
         brandIdentity: {
@@ -830,22 +752,8 @@ brandingLanding: {
             "El sistema incluye dirección tipográfica, decisiones de color, principios de composición y recursos visuales flexibles que pueden escalar a medida que el negocio crece.",
           date: "22 de mayo de 2024",
           client: "Verve Studio",
-          servicesLabel: "Branding, Estrategia",
+          servicesLabel: "Branding, Diseño",
           artDirector: "Sophia Turner",
-        },
-        uxStrategy: {
-          title: "Estrategia UX",
-          description: "Mejoras de usabilidad del producto",
-          summary:
-            "Una iniciativa de usabilidad enfocada en aclarar flujos, reducir fricción en la interfaz y mejorar la toma de decisiones dentro de la experiencia principal.",
-          briefLead:
-            "El trabajo alineó objetivos del negocio con cambios prácticos de interfaz para que el producto se entienda mejor y sea más fácil de usar.",
-          briefBody:
-            "Mapeamos recorridos clave, priorizamos cuellos de botella y convertimos esos hallazgos en recomendaciones de interfaz que pueden implementarse de forma gradual con impacto medible.",
-          date: "17 de enero de 2025",
-          client: "Atlas Product Lab",
-          servicesLabel: "Estrategia, Diseño",
-          artDirector: "Ethan Brooks",
         },
       },
     },

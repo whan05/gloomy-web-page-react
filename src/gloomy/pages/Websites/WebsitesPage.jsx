@@ -9,14 +9,13 @@ export const WebsitesPage = () => {
   const { t } = useLanguage()
   const portfolioItems = getPortfolioItems(t)
   const websiteProjects = portfolioItems
-    .filter((item) => ["websites", "marketing", "branding"].includes(item.category))
+    .filter((item) => ["websites", "branding", "design"].includes(item.category))
     .slice(0, 3)
 
   const serviceCards = [
-    { id: "strategy", label: t("websitesLanding.services.strategy"), variant: "mint" },
-    { id: "ux", label: t("websitesLanding.services.ux"), variant: "lavender" },
-    { id: "conversion", label: t("websitesLanding.services.conversion"), variant: "peach" },
-    { id: "development", label: t("websitesLanding.services.development"), variant: "blue" },
+    { id: "ux", label: t("websitesLanding.services.ux"), variant: "mint" },
+    { id: "conversion", label: t("websitesLanding.services.conversion"), variant: "lavender" },
+    { id: "development", label: t("websitesLanding.services.development"), variant: "peach" },
   ]
 
   return (

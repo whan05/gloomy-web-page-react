@@ -14,7 +14,7 @@ export const Statistic = () => {
         <div className="statistics-container">
           <div className="statistics-content">
             <StatisticItem
-              number="347"
+              number="+52"
               description={t("statistic.items.completeProjects")}
               bgColor="#CFF5E7"
               className="stat-item item-green"
@@ -24,7 +24,7 @@ export const Statistic = () => {
           </div>
           <div className="statistic-website">
             <StatisticItem
-              number="1720"
+              number="+156"
               description={t("statistic.items.websitePages")}
               bgColor="#FFB7A5"
               className="stat-item item-orange"
@@ -35,7 +35,7 @@ export const Statistic = () => {
           <div className="statistics-content">
             <p className="statistic-text bottom-text">{t("statistic.bottomText")}</p>
             <StatisticItem
-              number="31568"
+              number="3568"
               description={t("statistic.items.workingHours")}
               bgColor="#BEE7FF"
               className="stat-item item-blue"

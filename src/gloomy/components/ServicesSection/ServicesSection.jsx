@@ -21,14 +21,6 @@ export const ServicesSection = () => {
         />
 
         <AccordionItem
-          title={t("services.items.marketing.title")}
-          icon="#"
-          color="#FFB6A0"
-          description={t("services.items.marketing.description")}
-          route="/services"
-        />
-
-        <AccordionItem
           title={t("services.items.branding.title")}
           icon="✱"
           color="#BDE4FF"
@@ -42,14 +34,6 @@ export const ServicesSection = () => {
           color="#C6C8FF"
           description={t("services.items.design.description")}
           route="/design"
-        />
-
-        <AccordionItem
-          title={t("services.items.strategy.title")}
-          icon="{"
-          color="#FFF9A6"
-          description={t("services.items.strategy.description")}
-          route="/services"
         />
       </Accordion>
     </section>

@@ -21,11 +21,6 @@ export const getFaqItems = (t) => [
   },
   {
     id: 5,
-    question: t("faq.items.marketingStrategy.question"),
-    answer: t("faq.items.marketingStrategy.answer"),
-  },
-  {
-    id: 6,
     question: t("faq.items.leadingAgency.question"),
     answer: t("faq.items.leadingAgency.answer"),
   },
