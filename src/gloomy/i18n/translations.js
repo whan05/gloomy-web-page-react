@@ -20,6 +20,7 @@ export const translations = {
         home: "Home",
         websites: "Websites",
         design: "Design",
+        branding: "Branding",
         ourWork: "Our Work",
         about: "About",
         services: "Services",
@@ -55,6 +56,24 @@ export const translations = {
     },
     designLanding: {
       heroTitle: "Design",
+      title: "Create a Brand Your Customers Love",
+      cta: "Book a Discovery Call",
+      lead: "Your brand should feel alive, intentional, and memorable across every touchpoint your audience experiences.",
+      body:
+        "We shape visual systems that bring clarity to positioning, strengthen perception, and give your business a distinct identity that feels consistent in print, digital products, campaigns, and content.",
+      servicesTitle: "Our Design Services:",
+      servicesBody:
+        "From brand identity and guidelines to product visuals and interface systems, we design assets that are expressive enough to stand out and structured enough to scale.",
+      projectsTitle: "Our Design Projects:",
+      services: {
+        identity: "Branding Strategy & Identity",
+        guidelines: "Branding Guidelines",
+        systems: "Brand Foundations",
+        ui: "Logo Development",
+      },
+    },
+    brandingLanding: {
+      heroTitle: "Branding",
       title: "Create a Brand Your Customers Love",
       cta: "Book a Discovery Call",
       lead: "Your brand should feel alive, intentional, and memorable across every touchpoint your audience experiences.",
@@ -447,6 +466,7 @@ export const translations = {
         home: "Inicio",
         websites: "Sitios web",
         design: "Diseño",
+        branding: "Branding",
         ourWork: "Nuestro trabajo",
         about: "Nosotros",
         services: "Servicios",
@@ -482,6 +502,24 @@ export const translations = {
     },
     designLanding: {
       heroTitle: "Diseño",
+      title: "Crea una Marca que Tus Clientes Amen",
+      cta: "Agenda una llamada",
+      lead: "Tu marca debe sentirse viva, intencional y memorable en cada punto de contacto con tu audiencia.",
+      body:
+        "Diseñamos sistemas visuales que dan claridad al posicionamiento, fortalecen la percepción y le dan a tu negocio una identidad distintiva y coherente en piezas impresas, productos digitales, campañas y contenido.",
+      servicesTitle: "Nuestros Servicios de Diseño:",
+      servicesBody:
+        "Desde identidad de marca y lineamientos visuales hasta recursos de interfaz y sistemas gráficos, diseñamos activos que destacan con personalidad y al mismo tiempo son lo bastante sólidos para escalar.",
+      projectsTitle: "Nuestros Proyectos de Diseño:",
+      services: {
+        identity: "Estrategia e Identidad de Marca",
+        guidelines: "Guías de Branding",
+        systems: "Fundamentos de Marca",
+        ui: "Desarrollo de Logotipo",
+      },
+    },
+brandingLanding: {
+      heroTitle: "Branding",
       title: "Crea una Marca que Tus Clientes Amen",
       cta: "Agenda una llamada",
       lead: "Tu marca debe sentirse viva, intencional y memorable en cada punto de contacto con tu audiencia.",

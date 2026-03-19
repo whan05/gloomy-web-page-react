@@ -7,6 +7,7 @@ import {
   AboutPage,
   ContactPage,
   ProjectDetailPage,
+  BrandingPage,
 } from "../pages";
 import { MainLayout } from "../Layout/Main/MainLayout";
 
@@ -20,6 +21,7 @@ export const GloomylRoutes = () => {
         <Route path="/our-work" element={<OurWorkPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/branding" element={<BrandingPage />} />
         <Route path="/our-work/:projectSlug" element={<ProjectDetailPage />} />
         <Route path="/*" element={<Navigate to="/" />} />
       </Route>

@@ -60,6 +60,15 @@ export const MenuModal = ({ isOpen, onClose }) => {
                 >
                   {t("nav.items.design")}
                 </NavLink>
+                <NavLink
+                  to="/branding"
+                  onClick={onClose}
+                  className={({ isActive }) =>
+                    isActive ? "active" : undefined
+                  }
+                >
+                  {t("nav.items.branding")}
+                </NavLink>
               </div>
             </div>
 

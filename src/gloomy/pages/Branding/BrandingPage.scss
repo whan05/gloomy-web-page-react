@@ -1,0 +1,201 @@
+@use "tokens" as *;
+@use "mixins" as *;
+
+.design-page {
+  padding-bottom: $space-5xl;
+}
+
+.design-page__hero {
+  @include section-shell();
+  background: linear-gradient(90deg, #f1f1f1 0%, #f1f1f1 66%, rgba(241, 241, 241, 0.2) 66%),
+    url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80")
+      center right / cover no-repeat;
+  border-radius: $radius-xl;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  margin-top: $space-sm;
+  min-width: 100vw;
+}
+
+.design-page__hero h1 {
+  font-size: clamp(58px, 8vw, 110px);
+  font-weight: 600;
+  line-height: 0.95;
+  margin: 0;
+}
+
+.design-page__hero h1 span {
+  display: inline-flex;
+  margin-right: $space-sm;
+}
+
+.design-page__intro {
+  @include narrow-shell(1120px);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: $space-xl;
+  padding: $space-5xl 0 $space-4xl;
+  text-align: center;
+}
+
+.design-page__intro h2 {
+  font-size: clamp(46px, 6vw, 82px);
+  line-height: 0.98;
+  margin: 0;
+}
+
+.design-page__cta {
+  @include pill-button($color-accent-yellow);
+  font-size: 18px;
+  gap: $space-xs;
+  padding: 18px 32px;
+  text-decoration: none;
+}
+
+.design-page__cta:hover {
+  background: $color-accent-peach;
+}
+
+.design-page__lead {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0;
+  max-width: 24ch;
+}
+
+.design-page__body {
+  color: $color-text-soft;
+  font-size: 18px;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 82ch;
+}
+
+.design-page__services {
+  @include section-shell();
+  border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+  padding-bottom: $space-5xl;
+}
+
+.design-page__services h2,
+.design-page__projects h2 {
+  font-size: clamp(36px, 5vw, 62px);
+  margin: 0 0 $space-xl;
+  text-align: center;
+}
+
+.design-page__service-track {
+  align-items: center;
+  display: grid;
+  gap: $space-md;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-bottom: $space-xl;
+  position: relative;
+}
+
+.design-page__service-track::before {
+  background: linear-gradient(90deg, rgba(124, 195, 255, 0.2) 0%, rgba(124, 195, 255, 0.9) 50%, rgba(124, 195, 255, 0.2) 100%);
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: 0;
+}
+
+.design-page__service-card {
+  align-items: center;
+  border-radius: $radius-lg;
+  display: flex;
+  font-size: 24px;
+  font-weight: 600;
+  justify-content: center;
+  min-height: 136px;
+  padding: $space-md;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.design-page__service-card--mint {
+  background: $color-accent-mint;
+}
+
+.design-page__service-card--lavender {
+  background: $color-accent-lavender;
+}
+
+.design-page__service-card--peach {
+  background: #f9a896;
+}
+
+.design-page__service-card--blue {
+  background: #9fd3f8;
+}
+
+.design-page__services-body {
+  color: $color-text-soft;
+  font-size: 18px;
+  line-height: 1.65;
+  margin: 0 auto;
+  max-width: 76ch;
+  text-align: center;
+}
+
+.design-page__projects {
+  @include section-shell();
+  padding-top: $space-4xl;
+}
+
+.design-page__projects-grid {
+  display: grid;
+  gap: $space-md;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.design-page__projects-grid .portfolio-card {
+  border-radius: $radius-lg;
+}
+
+@include tablet {
+  .design-page__hero {
+    background: linear-gradient(180deg, rgba(241, 241, 241, 0.94) 0%, rgba(241, 241, 241, 0.82) 100%),
+      url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80")
+        center / cover no-repeat;
+    min-height: 260px;
+  }
+
+  .design-page__service-track {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .design-page__projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@include mobile {
+  .design-page__intro {
+    padding: $space-4xl 0;
+  }
+
+  .design-page__lead {
+    font-size: 22px;
+  }
+
+  .design-page__service-track {
+    grid-template-columns: 1fr;
+  }
+
+  .design-page__projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .design-page__service-card {
+    font-size: 22px;
+  }
+}

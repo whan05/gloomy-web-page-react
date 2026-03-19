@@ -49,6 +49,11 @@ export const Navigation = () => {
           to="/design">
           {t("nav.items.design")}
         </NavLink>
+        <NavLink
+           className={({ isActive }) => (isActive ? "active" : undefined)}
+          to="/branding">
+          {t("nav.items.branding")}
+        </NavLink>
         <NavLink 
            className={({ isActive }) => (isActive ? "active" : undefined)}
           to="/our-work">
