@@ -233,27 +233,27 @@ export const translations = {
     reviews: {
       title: "What our clients say",
       description:
-        "Our clients’ reviews clearly demonstrate how efficient our collaborative approach is.",
+        "What our clients say reflects the clarity, care, and momentum behind the way we work.",
       previousReview: "Previous review",
       nextReview: "Next review",
       items: {
         anthony: {
-          name: "Anthony Jhone",
-          role: "Project Lead",
+          name: "Diego Leiva",
+          role: "Client",
           content:
-            "Agency pleased the client with their brand and website’s new look and feel. Their team managed the project in a rigorous and structured manner, setting a high standard for them to work from. They also communicated well and delivered timely outputs, with only a few extensions requested.",
+            "Gloomy Studios helped me take my digital presence to the next level. What stood out most was their support throughout the entire process and their attention to detail. Highly recommended.",
         },
         jessica: {
-          name: "Jessica Dover",
-          role: "Art Director",
+          name: "Malcom Mason",
+          role: "PeakSynap",
           content:
-            "From start to finish they were available to answer any questions we had and help us with anything we needed. The technologies they guided us to choose have been easy to use and reliable!",
+            "We loved working with Gloomy Studios. They took our idea and turned it into something far better than we imagined, both on web and mobile. Fully recommended.",
         },
         emerson: {
-          name: "Emerson Schmidt",
-          role: "Project Lead",
+          name: "Pablo Camacho",
+          role: "Legado Forestal",
           content:
-            "Agency pleased the client with their brand and website’s new look and feel. Their team managed the project in a rigorous and structured manner, setting a high standard for them to work from. They also communicated well and delivered timely outputs.",
+            "Gloomy Studios understood exactly what we needed for our teak wood ecommerce business. They delivered an online store that feels attractive, functional, and easy to use. Highly recommended.",
         },
       },
     },
@@ -633,27 +633,27 @@ brandingLanding: {
     reviews: {
       title: "Lo que dicen nuestros clientes",
       description:
-        "Las reseñas de nuestros clientes demuestran con claridad lo eficiente que es nuestro enfoque colaborativo.",
+        "Lo que dicen nuestros clientes refleja la claridad, el cuidado y el ritmo con el que trabajamos.",
       previousReview: "Reseña anterior",
       nextReview: "Siguiente reseña",
       items: {
         anthony: {
-          name: "Anthony Jhone",
-          role: "Líder de proyecto",
+          name: "Diego Leiva",
+          role: "Cliente",
           content:
-            "La agencia dejó satisfecho al cliente con la nueva identidad de su marca y la apariencia del sitio web. Su equipo gestionó el proyecto de forma rigurosa y estructurada, estableciendo un estándar alto de trabajo. Además, se comunicaron bien y entregaron resultados a tiempo, con muy pocas extensiones solicitadas.",
+            "Gloomy Studios me ayudó a llevar mi presencia digital al siguiente nivel. Destaco mucho su acompañamiento durante todo el proceso y la atención al detalle. Muy recomendados.",
         },
         jessica: {
-          name: "Jessica Dover",
-          role: "Directora de arte",
+          name: "Malcom Mason",
+          role: "PeakSynap",
           content:
-            "De principio a fin estuvieron disponibles para responder nuestras preguntas y ayudarnos con todo lo que necesitábamos. Las tecnologías que nos guiaron a elegir han sido fáciles de usar y muy confiables.",
+            "Nos encantó trabajar con Gloomy Studios. Tomaron nuestra idea y la transformaron en algo mucho mejor de lo que imaginábamos, tanto en web como en móvil. Totalmente recomendados.",
         },
         emerson: {
-          name: "Emerson Schmidt",
-          role: "Líder de proyecto",
+          name: "Pablo Camacho",
+          role: "Legado Forestal",
           content:
-            "La agencia dejó satisfecho al cliente con la nueva identidad de su marca y la apariencia del sitio web. Su equipo gestionó el proyecto de forma rigurosa y estructurada, marcando un estándar muy alto. También mantuvieron una buena comunicación y entregaron resultados a tiempo.",
+            "Gloomy Studios entendió perfectamente lo que necesitábamos para nuestro ecommerce de madera teca. Entregaron una tienda online atractiva, funcional y fácil de usar. Muy recomendados.",
         },
       },
     },
